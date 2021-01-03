@@ -29,7 +29,7 @@
     <h2>Some of my experiments</h2>
 
     <div
-        x-data="{ details: [], experiments: [ 'quarno/ali', 'quarno/stop', 'quarno/top-for-spotify', 'quarno/cv', 'quarno/lurkmore' ] }"
+        x-data="{ details: [], experiments: [ 'quarno/ali', 'quarno/stop', 'quarno/top-for-spotify', 'quarno/cv', 'quarno/lurkmore', 'quarno/quarno.github.io' ] }"
         x-init="experiments.forEach(e => fetch(`https://api.github.com/repos/${e}`).then(response => response.json()).then(data => details.push(data)))"
     >
         <template x-for="e in details">
