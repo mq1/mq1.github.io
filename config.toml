@@ -5,6 +5,9 @@ title = "Manuel Quarneti"
 [markup.goldmark.renderer]
 unsafe = true
 
+[minify.tdewolff.html]
+keepWhitespace=true
+
 [params]
 email = "manuelquarneti@gmail.com"
 githubProfile = "https://github.com/mq1"
