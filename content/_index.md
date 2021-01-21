@@ -21,7 +21,7 @@
 > A lightweight reimplementation of STOP on Alpine.js, new.css and Hugo
 
 > ### [cv](/cv/cv.pdf)[<i class="fab fa-git-alt"></i>]({{< param GithubProfile >}}/cv)</right>
-> My cv written in (Lua)LaTeX, feel free to use this as a template
+> My cv written in XeLaTeX and using Tectonic, feel free to use it as a template
 
 > ### Lurkmore[<i class="fab fa-git-alt"></i>]({{< param GithubProfile >}}/lurkmore)</right>
 > A (laggy) imageboard client, I coded this when exploring Dart and Flutter
