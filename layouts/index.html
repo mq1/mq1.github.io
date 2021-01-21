@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="{{ .Language.Lang }}">
+
+<head>
+    {{ partial "head.html" . }}
+</head>
+
+<body>
+    <header>
+        {{ partial "header.html" . }}
+    </header>
+
+    {{ .Content }}
+
+    <br>
+    <hr>
+    <br>
+
+    <footer>
+        Copyright (c) 2021 Manuel Quarneti
+    </footer>
+</body>
+
+</html>
