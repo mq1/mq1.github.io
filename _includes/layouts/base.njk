@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="{{ .Language.Lang }}">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manuel Quarneti</title>
+    <title>{{ name }}</title>
     <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/js/brands.min.js"></script>
@@ -12,28 +12,31 @@
     <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/js/fontawesome.min.js"></script>
 
     <!-- styles.css -->
-    {{ $styles := resources.Get "styles.css" }}
-    {{ $styles = $styles | minify }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}">
+    {% set css %}
+        {% include "css/styles.css" %}
+    {% endset %}
+    <style>
+        {{ css | safe }}
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>Hi,<br />I'm Manuel Quarneti</h1>
-        <a href="mailto:{{ .Site.Params.Email }}"><i class="fas fa-envelope fa-2x"></i></a>
-        <a href="{{ .Site.Params.GithubProfile }}"><i class="fab fa-github fa-2x"></i></a>
-        <a href="{{ .Site.Params.LinkedinProfile }}"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a href="{{ .Site.Params.TelegramProfile }}"><i class="fab fa-telegram fa-2x"></i></a>
+        <h1>Hi,<br />I'm {{ name }}</h1>
+        <a href="mailto:{{ email }}"><i class="fas fa-envelope fa-2x"></i></a>
+        <a href="{{ github }}"><i class="fab fa-github fa-2x"></i></a>
+        <a href="{{ linkedin }}"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="{{ telegram }}"><i class="fab fa-telegram fa-2x"></i></a>
     </header>
 
-    {{ .Content }}
+    {{ content | safe }}
 
     <br>
     <hr>
     <br>
 
     <footer>
-        Copyright (c) 2021 Manuel Quarneti
+        Copyright (c) 2021 {{ name }}
     </footer>
 </body>
 
