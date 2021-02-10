@@ -37,4 +37,4 @@ telegram: https://t.me/quarno
 > A (laggy) imageboard client, I coded this when exploring Dart and Flutter
 
 > ### [This website](/)[<i class="fab fa-git-alt"></i>]({{ github }}/mq1.github.io)</right>
-> This website is open source and uses Hugo, new.css and FontAwesome
+> This website is open source and uses 11ty, new.css and FontAwesome
