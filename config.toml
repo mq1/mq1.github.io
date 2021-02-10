@@ -13,13 +13,3 @@ email = "manuelquarneti@gmail.com"
 githubProfile = "https://github.com/mq1"
 linkedinProfile = "https://www.linkedin.com/in/mq1"
 telegramProfile = "https://t.me/quarno"
-
-[module]
-
-[[module.mounts]]
-source = "assets"
-target = "assets"
-
-[[module.mounts]]
-source = "node_modules"
-target = "assets/node_modules"

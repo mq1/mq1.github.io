@@ -10,22 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v2
         with:
-          node-version: '12'
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Cache dependencies
-        uses: actions/cache@v2
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          hugo-version: '0.80.0'
 
-      - run: npm ci
-      - run: npm run build
+      - name: Build
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
