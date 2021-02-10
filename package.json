@@ -1,0 +1,24 @@
+{
+  "name": "mq1.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "hugo --minify",
+    "serve": "hugo server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mq1/mq1.github.io.git"
+  },
+  "keywords": [],
+  "author": "Manuel Quarneti <manuelquarneti@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mq1/mq1.github.io/issues"
+  },
+  "homepage": "https://github.com/mq1/mq1.github.io#readme",
+  "devDependencies": {
+    "hugo-bin": "^0.68.0"
+  }
+}
