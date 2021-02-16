@@ -28,7 +28,7 @@ telegram: https://t.me/quarno
 > A (minimal) Spotify stats viewer, I coded this when exploring Nuxt.js and TypeScript
 
 > ### [top-for-spotify](https://mq1.eu/top-for-spotify/)[<i class="fab fa-git-alt"></i>]({{ github }}/top-for-spotify)</right>
-> A lightweight reimplementation of STOP on Alpine.js, new.css and Hugo
+> A lightweight reimplementation of STOP on Alpine.js, TypeScript and Hugo
 
 > ### [cv](/cv/cv.pdf)[<i class="fab fa-git-alt"></i>]({{ github }}/cv)</right>
 > My cv written in XeLaTeX and using Tectonic, feel free to use it as a template
