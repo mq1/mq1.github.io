@@ -17,7 +17,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
 
-<body class="flex h-screen bg-white dark:bg-black">
+<body class="flex flex-col h-screen bg-white dark:bg-black">
     <div class="m-auto" x-data="{ projects: false, aboutMe: false }">
         <h1 class="text-5xl font-bold dark:text-white">Hi, <br>I'm Manuel Quarneti</h1>
         <div class="flex gap-2 py-2">
@@ -73,6 +73,12 @@
             </div>
         </div>
     </div>
+
+    <footer class="text-center py-4 dark:text-white">
+        <p class="py-4">© 2021 Manuel Quarneti</p>
+        <p class="text-gray-500 py-1">Made with Hugo, TailwindCSS, alpine.js and Feather Icons</p>
+        <p class="text-gray-500">Hosted on GitHub Pages</p>
+    </footer>
 </body>
 
 </html>
