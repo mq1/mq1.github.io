@@ -1,0 +1,31 @@
+{
+    "ALI (Arch Linux Installer)": {
+        "url": "https://mq1.eu/ali",
+        "repo": "https://github.com/mq1/ali",
+        "desc": "A (broken) Arch Linux Installer written in bash"
+    },
+    "STOP (TOP for Spotify)": {
+        "url": "https://mq1.eu/stop/",
+        "repo": "https://github.com/mq1/stop",
+        "desc": "A (minimal) Spotify stats viewer, I coded this when exploring Nuxt.js and TypeScript"
+    },
+    "top-for-spotify": {
+        "url": "https://mq1.eu/top-for-spotify/",
+        "repo": "https://github.com/mq1/top-for-spotify",
+        "desc": "A lightweight reimplementation of STOP on Alpine.js, TypeScript and Hugo"
+    },
+    "cv": {
+        "url": "/cv/cv.pdf",
+        "repo": "https://github.com/mq1/cv",
+        "desc": "My cv written in XeLaTeX and using Tectonic, feel free to use it as a template"
+    },
+    "Lurkmore": {
+        "repo": "https://github.com/mq1/lurkmore",
+        "desc": "A (laggy) imageboard client, I coded this when exploring Dart and Flutter"
+    },
+    "This website": {
+        "url": "/",
+        "repo": "https://github.com/mq1/mq1.github.io",
+        "desc": "This website is open source and uses 11ty, new.css and FontAwesome"
+    }
+}

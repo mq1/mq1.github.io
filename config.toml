@@ -1,0 +1,6 @@
+baseURL = "https://mq1.eu/"
+languageCode = "en-us"
+title = "Manuel Quarneti"
+
+[markup.goldmark.renderer]
+unsafe = true
