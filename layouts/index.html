@@ -52,7 +52,15 @@
             </button>
         </div>
 
-        <div x-show="projects">
+        <div
+            x-show="projects"
+            x-transition:enter="transition ease-out duration-100 transform"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75 transform"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+        >
             {{ range $key, $val := .Site.Data.projects }}
             <div class="box-border p-4 my-4 border-2 rounded shadow-xl">
                 <h2 class="flex justify-between">
@@ -66,7 +74,16 @@
             {{ end }}
         </div>
 
-        <div x-show="aboutMe" class="py-8">
+        <div
+            x-show="aboutMe"
+            x-transition:enter="transition ease-out duration-100 transform"
+            x-transition:enter-start="opacity-0 scale-95"
+            x-transition:enter-end="opacity-100 scale-100"
+            x-transition:leave="transition ease-in duration-75 transform"
+            x-transition:leave-start="opacity-100 scale-100"
+            x-transition:leave-end="opacity-0 scale-95"
+            class="py-8"
+        >
             <div class="dark:text-white">
                 <p class="text-center py-2">I live in Cotignola RA, Italy 🇮🇹 🇪🇺</p>
                 <p class="text-center py-2">I'm studying Computer Science and Engineering @ University of Bologna</p>
