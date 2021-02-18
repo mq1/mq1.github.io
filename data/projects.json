@@ -26,6 +26,6 @@
     "This website": {
         "url": "/",
         "repo": "https://github.com/mq1/mq1.github.io",
-        "desc": "This website is open source and uses 11ty, new.css and FontAwesome"
+        "desc": "This website is open source and uses Hugo, TailwindCSS, alpine.js and Feather Icons"
     }
 }
