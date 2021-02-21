@@ -88,16 +88,18 @@
             x-transition:leave-end="transform opacity-0 scale-95"
             class="py-8"
         >
-            <div class="dark:text-white">
-                <p class="text-center py-2">I live in Cotignola RA, Italy 🇮🇹 🇪🇺</p>
-                <p class="text-center py-2">I'm studying Computer Science and Engineering @ University of Bologna</p>
-            </div>
+            <div
+                x-ref="aboutMeContent"
+                class="dark:text-white leading-loose"
+                x-data
+                x-init="fetch('https://raw.githubusercontent.com/mq1/mq1/master/README.md').then(response => response.text()).then(html => { $refs.aboutMeContent.innerHTML = html })"
+            ></div>
         </div>
     </div>
 
-    <footer class="text-center py-4 dark:text-white">
-        <p class="py-4">© 2021 Manuel Quarneti</p>
-        <p class="text-gray-500 py-1">Made with Hugo, TailwindCSS, alpine.js, Feather Icons and Inter Font</p>
+    <footer class="text-center py-4 dark:text-white leading-loose">
+        <p class="">© 2021 Manuel Quarneti</p>
+        <p class="text-gray-500">Made with Hugo, TailwindCSS, alpine.js, Feather Icons and Inter Font</p>
         <p class="text-gray-500">Hosted on GitHub Pages</p>
     </footer>
 </body>
