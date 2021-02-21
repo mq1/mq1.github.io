@@ -90,7 +90,7 @@
         >
             <div
                 x-ref="aboutMeContent"
-                class="dark:text-white leading-loose"
+                class="dark:text-white space-y-4"
                 x-data
                 x-init="fetch('https://raw.githubusercontent.com/mq1/mq1/master/README.md').then(response => response.text()).then(html => { $refs.aboutMeContent.innerHTML = html })"
             ></div>
