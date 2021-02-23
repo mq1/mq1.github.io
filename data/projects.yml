@@ -4,15 +4,10 @@ ALI (Arch Linux Installer):
   repo: https://github.com/mq1/ali
   desc: A (broken) Arch Linux Installer written in bash
 
-STOP (TOP for Spotify):
-  url: https://mq1.eu/stop/
-  repo: https://github.com/mq1/stop
-  desc: A (minimal) Spotify stats viewer, I coded this when exploring Nuxt.js and TypeScript
-
 top-for-spotify:
   url: https://mq1.eu/top-for-spotify/
   repo: https://github.com/mq1/top-for-spotify
-  desc: A lightweight reimplementation of STOP on Alpine.js, TypeScript and Hugo
+  desc: A Spotify stats visualizer written with ViteJS, Vue3 and TailwindCSS
 
 cv:
   url: /cv/cv.pdf
