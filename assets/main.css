@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind screens;
+
+@layer base {
+    #aboutMeContent a {
+        @apply underline;
+    }
+    kbd {
+        @apply box-border dark:border-white border-2 px-1 py-1 mx-1 rounded-md;
+    }
+}
