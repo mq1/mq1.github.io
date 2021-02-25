@@ -7,7 +7,7 @@ ALI (Arch Linux Installer):
 top-for-spotify:
   url: https://mq1.eu/top-for-spotify/
   repo: https://github.com/mq1/top-for-spotify
-  desc: A Spotify stats visualizer written with ViteJS, Vue3, TypeScript and TailwindCSS
+  desc: A Spotify stats visualizer written with ViteJS, Vue3, TypeScript, TailwindCSS and HeroIcons
 
 cv:
   url: /cv/cv.pdf
