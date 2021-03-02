@@ -1,5 +1,4 @@
 <template>
-  <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <div
     class="flex flex-col h-screen bg-white dark:bg-black dark:text-white text-left"
   >
@@ -29,8 +28,14 @@
       </div>
       <Projects v-show="isOpen === 'projects'" />
       <AboutMe v-show="isOpen === 'aboutMe'" />
-      <!-- <HelloWorld msg="Hello Vue 3 + Vite" /> -->
     </div>
+    <footer class="text-center py-4 leading-loose">
+      <p class="">© 2021 Manuel Quarneti</p>
+      <p class="text-gray-500">
+        Made with ViteJS, Vue3, TailwindCSS and Feather Icons
+      </p>
+      <p class="text-gray-500">Hosted on GitHub Pages</p>
+    </footer>
   </div>
 </template>
 
