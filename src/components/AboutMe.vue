@@ -1,5 +1,5 @@
 <template>
-  <div class="leading-loose break-normal max-w-3xl flex flex-col gap-y-4">
+  <div class="leading-loose break-normal flex flex-col gap-y-4">
     <p>
       🏫 I'm a <strong>Computer Science and Engineering</strong> student at Alma
       Mater Studiorum (University of Bologna)
