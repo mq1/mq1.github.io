@@ -42,7 +42,7 @@ const projects = {
     url: "https://mq1.eu/top-for-spotify/",
     repo: "https://github.com/mq1/top-for-spotify",
     desc:
-      "A Spotify stats visualizer written with ViteJS, Vue3, TypeScript, TailwindCSS and HeroIcons",
+      "A Spotify stats visualizer written with ViteJS, Vue3, TypeScript, TailwindCSS, HeroIcons and Inter Font",
   },
   cv: {
     url: "/cv/cv.pdf",
