@@ -60,7 +60,7 @@ const projects = {
     url: "/",
     repo: "https://github.com/mq1/mq1.github.io",
     desc:
-      "This website is open source and uses ViteJS, Vue3, TailwindCSS and Feather Icons",
+      "This website is open source and uses ViteJS, Vue3, TailwindCSS, Feather Icons and Inter Font",
   },
 };
 </script>
