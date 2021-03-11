@@ -2,7 +2,7 @@
   <div
     class="flex flex-col h-screen bg-white dark:bg-black dark:text-white text-left"
   >
-    <div class="m-auto max-w-3xl p-10 sm:shadow-2xl sm:rounded-2xl border-2">
+    <div class="m-auto max-w-3xl p-10 sm:shadow-xl sm:rounded-3xl border-2">
       <Header />
       <div class="flex justify-around gap-2 py-4">
         <button
