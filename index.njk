@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manuel Quarneti</title>
+    <link href="/styles.css" rel="stylesheet">
+    <script defer>
+      const openProjects = () => {
+        document.getElementById("projects").style.display = document.getElementById("projects").style.display === "none" ? "block" : "none"
+        document.getElementById("aboutMe").style.display = "none"
+      }
+      const openAboutMe = () => {
+        document.getElementById("aboutMe").style.display = document.getElementById("aboutMe").style.display === "none" ? "block" : "none"
+        document.getElementById("projects").style.display = "none"
+      }
+    </script>
+  </head>
+  <body>
+    <div class="flex flex-col h-screen bg-white dark:bg-black dark:text-white text-left">
+      <div class="m-auto max-w-3xl p-10 sm:shadow-xl sm:rounded-3xl border-2">
+        {% include 'header.njk' %}
+
+        <div class="flex justify-around gap-2 py-4">
+          <button class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-400" onclick="openProjects()">
+            My projects
+          </button>
+          <a target="_blank" href="/cv/cv.pdf" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-400 flex">
+            My cv
+            <div class="animate-bounce ml-2 mt-1">↓</div>
+          </a>
+          <button class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-400" onclick="openAboutMe()">
+            About me
+          </button>
+        </div>
+
+        {% include 'projects.njk' %}
+
+        {% include 'about-me.njk' %}
+      </div>
+      <footer class="text-center py-4 leading-loose">
+        <p class="">© 2021 Manuel Quarneti</p>
+        <p class="text-gray-500">
+          Made with ViteJS, Vue3, TailwindCSS, Feather Icons and Inter Font
+        </p>
+        <p class="text-gray-500">Hosted on GitHub Pages</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
