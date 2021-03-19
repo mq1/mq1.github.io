@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "run-p dev:*",
+    "dev": "cross-env NODE_ENV=development run-p dev:*",
     "dev:eleventy": "eleventy --serve",
-    "dev:postcss": "postcss _includes/**/*.css --dir _site --watch",
-    "build": "run-s build:eleventy build:postcss",
+    "dev:postcss": "postcss main.css --dir _includes --watch",
+    "build": "cross-env NODE_ENV=production run-s build:postcss build:eleventy",
     "build:eleventy": "eleventy",
-    "build:postcss": "cross-env NODE_ENV=production postcss _includes/**/*.css --dir _site"
+    "build:postcss": "postcss main.css --dir _includes"
   },
   "repository": {
     "type": "git",
@@ -25,7 +25,9 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "autoprefixer": "^10.2.5",
+    "clean-css": "^4.2.3",
     "cross-env": "^7.0.3",
+    "html-minifier": "^4.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.2.8",
     "postcss-cli": "^8.3.1",
