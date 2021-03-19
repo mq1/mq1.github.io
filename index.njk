@@ -8,16 +8,7 @@
     <meta name="keywords" content="Manuel Quarneti">
     <title>Manuel Quarneti</title>
     
-    {% set css %}
-      {% include "main.css" %}
-    {% endset %}
-
-    {% if myProject.environment == "production" %}
-      <style>{{ css | cssmin | safe }}</style>
-    {% else %}
-      <style>{{ css | safe }}</style>
-    {% endif %}
-
+    <link href="main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
     <script defer>

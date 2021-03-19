@@ -2,7 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: [
-    './_includes/**/*.njk'
+    './_site/**/*.html'
   ],
   darkMode: 'media',
   theme: {
