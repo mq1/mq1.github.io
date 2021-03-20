@@ -1,4 +1,4 @@
-<header>
+<header class="p-10 sm:shadow-xl sm:rounded-2xl border-2">
   <h1 class="text-5xl font-bold">Hi,<br/>I'm Manuel Quarneti</h1>
   <div class="flex gap-2 py-2">
     <a href="https://github.com/mq1/">
@@ -25,5 +25,18 @@
         <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
       </svg>
     </a>
+  </div>
+
+  <div class="flex justify-around gap-2 pt-6">
+    <button class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-400" onclick="openProjects()">
+      My projects
+    </button>
+    <a target="_blank" href="/cv/cv.pdf" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-400 flex">
+      My cv
+      <div class="animate-bounce ml-2 mt-1">↓</div>
+    </a>
+    <button class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-400" onclick="openAboutMe()">
+      About me
+    </button>
   </div>
 </header>
