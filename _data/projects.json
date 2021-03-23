@@ -12,10 +12,10 @@
     "desc": "A Spotify stats visualizer written with ViteJS, Vue3, TypeScript, TailwindCSS, HeroIcons and Inter Font"
   },
   {
-    "name": "cv",
-    "url": "/cv/cv.pdf",
-    "repo": "https://github.com/mq1/cv",
-    "desc": "My cv written in XeLaTeX and using Tectonic, feel free to use it as a template"
+    "name": "mq1",
+    "url": "/mq1/cv.pdf",
+    "repo": "https://github.com/mq1/mq1",
+    "desc": "My cv with automatic HTML and PDF generation using Pandoc"
   },
   {
     "name": "Lurkmore",
