@@ -1,14 +1,9 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
-  purge: [
-    './_site/**/*.html'
-  ],
   darkMode: 'media',
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Inter var', 'sans-serif'],
       },
       typography: (theme) => ({
         light: {
@@ -81,6 +76,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require('windicss/plugin/typography'),
   ],
 }
