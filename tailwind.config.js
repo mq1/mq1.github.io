@@ -1,10 +1,10 @@
 module.exports = {
   darkMode: 'media',
   theme: {
+    fontFamily: {
+      sans: ['Inter var', 'sans-serif'],
+    },
     extend: {
-      fontFamily: {
-        sans: ['Inter var', 'sans-serif'],
-      },
       typography: {
         light: {
           css: [
@@ -68,11 +68,6 @@ module.exports = {
           ],
         },
       },
-    },
-  },
-  variants: {
-    extend: {
-      typography: ['dark'],
     },
   },
   plugins: [
