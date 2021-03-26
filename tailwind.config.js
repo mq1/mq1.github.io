@@ -5,69 +5,69 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', 'sans-serif'],
       },
-      typography: (theme) => ({
+      typography: {
         light: {
           css: [
             {
-              color: theme('colors.gray.400'),
+              color: '#9ca3af', // gray-400
               '[class~="lead"]': {
-                color: theme('colors.gray.300'),
+                color: '#d1d5db', // gray-300
               },
               a: {
-                color: theme('colors.white'),
+                color: '#fff', // white
               },
               strong: {
-                color: theme('colors.white'),
+                color: '#fff', // white
               },
               'ol > li::before': {
-                color: theme('colors.gray.400'),
+                color: '#9ca3af', // gray-400
               },
               'ul > li::before': {
-                backgroundColor: theme('colors.gray.600'),
+                backgroundColor: '#4b5563', // gray-600
               },
               hr: {
-                borderColor: theme('colors.gray.200'),
+                borderColor: '#e5e7eb', // gray-200
               },
               blockquote: {
-                color: theme('colors.gray.200'),
-                borderLeftColor: theme('colors.gray.600'),
+                color: '#e5e7eb', // gray-200
+                borderLeftColor: '#4b5563', // gray-600
               },
               h1: {
-                color: theme('colors.white'),
+                color: '#fff', // white
               },
               h2: {
-                color: theme('colors.white'),
+                color: '#fff', // white
               },
               h3: {
-                color: theme('colors.white'),
+                color: '#fff', // white
               },
               h4: {
-                color: theme('colors.white'),
+                color: '#fff', // white
               },
               'figure figcaption': {
-                color: theme('colors.gray.400'),
+                color: '#9ca3af', // gray-400
               },
               code: {
-                color: theme('colors.white'),
+                color: '#fff', // white
               },
               'a code': {
-                color: theme('colors.white'),
+                color: '#fff', // white
               },
               pre: {
-                color: theme('colors.gray.200'),
-                backgroundColor: theme('colors.gray.800'),
+                color: '#e5e7eb', // gray-200
+                backgroundColor: '#1f2937', // gray-800
               },
               thead: {
-                color: theme('colors.white'),
-                borderBottomColor: theme('colors.gray.400'),
+                color: '#fff', // white
+                borderBottomColor: '#9ca3af', // gray-400
               },
               'tbody tr': {
-                borderBottomColor: theme('colors.gray.600'),
+                borderBottomColor: '#4b5563', // gray-600
               },
             },
           ],
         },
-      }),
+      },
     },
   },
   variants: {
