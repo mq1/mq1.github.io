@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "run-p dev:*",
     "dev:eleventy": "eleventy --serve",
-    "dev:windicss": "windicss './**/*.njk' -to _site/tailwind.css --watch",
+    "dev:windicss": "windicss './**/*.njk' -to _site/tailwind.css -f tailwind.config.js",
     "build": "cross-env NODE_ENV=production run-s build:eleventy build:windicss",
     "build:eleventy": "eleventy",
-    "build:windicss": "windicss './_site/*.html' -mto _site/tailwind.min.css"
+    "build:windicss": "windicss './_site/**/*.html' -mto _site/tailwind.min.css -f tailwind.config.js"
   },
   "repository": {
     "type": "git",
