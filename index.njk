@@ -7,8 +7,12 @@
     <meta name="description" content="Manuel Quarneti's personal website.">
     <meta name="keywords" content="Manuel Quarneti">
     <title>Manuel Quarneti</title>
-    
-    <link href="main.css" rel="stylesheet">
+
+    {% if myProject.environment == "production" %}
+    <link rel="stylesheet" href="tailwindcss.min.css">
+    {% else %}
+    <link rel="stylesheet" href="tailwindcss.css">
+    {% endif %}
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
     <script defer>
