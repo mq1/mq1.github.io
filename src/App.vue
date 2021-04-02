@@ -1,5 +1,16 @@
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useHead } from '@vueuse/head'
+
+useHead({
+  title: 'Manuel Quarneti',
+  meta: [
+    { name: 'description', content: 'Manuel Quarneti\'s personal website.' },
+  ],
+  link: [
+    { rel: 'stylesheet', href: 'https://rsms.me/inter/inter.css' },
+  ],
+})
 
 const showProjects = ref(false)
 const showAboutMe = ref(false)
@@ -23,9 +34,7 @@ const openAboutMe = () => {
       <AboutMe v-show="showAboutMe" />
     </div>
     <footer class="text-center py-4 leading-loose">
-      <p>
-        © 2021 Manuel Quarneti
-      </p>
+      <p>© 2021 Manuel Quarneti</p>
       <p class="text-gray-500">
         Made with 11ty, Windi CSS, Feather Icons and Inter Font
       </p>
