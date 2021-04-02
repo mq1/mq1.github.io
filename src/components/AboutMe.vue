@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue'
 
 const aboutMe = ref('')
-const getAboutMe = () => fetch('https://mq1.github.io/mq1/').then(r => r.text()).then(t => aboutMe.value = t)
+const getAboutMe = () => fetch('/aboutMe').then(r => r.text()).then(t => aboutMe.value = t)
 
 onMounted(getAboutMe)
 </script>

@@ -14,7 +14,7 @@ const projects = [
   },
   {
     name: 'mq1',
-    url: '/mq1/cv.pdf',
+    url: '/cv.pdf',
     repo: 'https://github.com/mq1/mq1',
     desc: 'My cv with automatic HTML and PDF generation using Pandoc',
   },

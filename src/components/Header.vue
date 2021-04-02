@@ -29,7 +29,7 @@ const emit = defineEmit(['showProjects', 'showAboutMe'])
       <button class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-400" @click="emit('showProjects')">
         My projects
       </button>
-      <a target="_blank" href="/mq1/cv.pdf" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-400 flex">
+      <a target="_blank" href="/cv.pdf" class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-400 flex">
         My cv
         <div class="animate-bounce ml-2 mt-1">↓</div>
       </a>
