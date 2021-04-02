@@ -28,7 +28,7 @@ const projects = [
     name: 'This website',
     url: '/',
     repo: 'https://github.com/mq1/mq1.eu',
-    desc: 'This website is open source and uses 11ty, Windi CSS, Feather Icons and Inter Font',
+    desc: 'This website is open source and uses ViteJS, Vue3, TypeScript, Windi CSS, Feather Icons and Inter Font',
   },
 ]
 </script>
