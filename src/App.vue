@@ -36,10 +36,7 @@ const openAboutMe = () => {
     <footer class="text-center py-4 leading-loose">
       <p>© 2021 Manuel Quarneti</p>
       <p class="text-gray-500">
-        Made with 11ty, Windi CSS, Feather Icons and Inter Font
-      </p>
-      <p class="text-gray-500">
-        Hosted on GitHub Pages
+        Hosted on Netlify | Source code <a class="underline" href="https://github.com/mq1/mq1.eu">here</a>
       </p>
     </footer>
   </main>
