@@ -6,6 +6,12 @@
   </head>
   <body>
     <div id="app"></div>
+    <script>
+      (() => {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches)
+          document.documentElement.classList.toggle('dark', true)
+      })()
+    </script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
