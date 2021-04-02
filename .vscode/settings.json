@@ -1,0 +1,7 @@
+{
+  "editor.tabSize": 2,
+  "volar.tsPlugin": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+  },
+}

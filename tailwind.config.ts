@@ -1,4 +1,7 @@
-module.exports = {
+import { defineConfig } from 'vite-plugin-windicss'
+import typography from 'windicss/plugin/typography'
+
+export default defineConfig({
   darkMode: 'media',
   theme: {
     fontFamily: {
@@ -9,14 +12,14 @@ module.exports = {
         light: {
           css: [
             {
-              color: '#9ca3af', // gray-400
+              'color': '#9ca3af', // gray-400
               '[class~="lead"]': {
                 color: '#d1d5db', // gray-300
               },
-              a: {
+              'a': {
                 color: '#fff', // white
               },
-              strong: {
+              'strong': {
                 color: '#fff', // white
               },
               'ol > li::before': {
@@ -25,39 +28,39 @@ module.exports = {
               'ul > li::before': {
                 backgroundColor: '#4b5563', // gray-600
               },
-              hr: {
+              'hr': {
                 borderColor: '#e5e7eb', // gray-200
               },
-              blockquote: {
+              'blockquote': {
                 color: '#e5e7eb', // gray-200
                 borderLeftColor: '#4b5563', // gray-600
               },
-              h1: {
+              'h1': {
                 color: '#fff', // white
               },
-              h2: {
+              'h2': {
                 color: '#fff', // white
               },
-              h3: {
+              'h3': {
                 color: '#fff', // white
               },
-              h4: {
+              'h4': {
                 color: '#fff', // white
               },
               'figure figcaption': {
                 color: '#9ca3af', // gray-400
               },
-              code: {
+              'code': {
                 color: '#fff', // white
               },
               'a code': {
                 color: '#fff', // white
               },
-              pre: {
+              'pre': {
                 color: '#e5e7eb', // gray-200
                 backgroundColor: '#1f2937', // gray-800
               },
-              thead: {
+              'thead': {
                 color: '#fff', // white
                 borderBottomColor: '#9ca3af', // gray-400
               },
@@ -71,6 +74,6 @@ module.exports = {
     },
   },
   plugins: [
-    require('windicss/plugin/typography'),
+    typography,
   ],
-}
+})
