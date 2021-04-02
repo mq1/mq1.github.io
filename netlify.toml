@@ -1,3 +1,9 @@
 [build]
   publish = "_site"
   command = "npm run build"
+
+[[redirects]]
+  from = "/top-for-spotify/*"
+  to = "https://top-for-spotify.netlify.app/:splat"
+  status = 200
+  force = true
