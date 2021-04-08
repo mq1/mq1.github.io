@@ -28,7 +28,7 @@ const openAboutMe = () => {
 <template>
   <main class="flex flex-col justify-between min-h-screen dark:bg-black dark:text-white">
     <div />
-    <div class="flex flex-col gap-y-8 m-auto my-8">
+    <div class="md:w-3xl flex flex-col gap-y-8 m-auto my-8">
       <Header @showProjects="openProjects()" @showAboutMe="openAboutMe()" />
       <Projects v-show="showProjects" />
       <AboutMe v-show="showAboutMe" />
