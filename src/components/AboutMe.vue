@@ -8,5 +8,5 @@ onMounted(getAboutMe)
 </script>
 
 <template>
-  <div class="prose dark:prose-light my-10" v-html="aboutMe" />
+  <div class="prose dark:prose-light p-8 max-w-full mx-auto border-2 border-dashed rounded-3xl" v-html="aboutMe" />
 </template>

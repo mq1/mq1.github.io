@@ -34,8 +34,8 @@ const projects = [
 </script>
 
 <template>
-  <div class="flex flex-col divide-y-2 divide-dashed">
-    <div v-for="project in projects" :key="project.name" class="p-8">
+  <div class="flex flex-col gap-y-2 max-w-xl mx-auto">
+    <div v-for="project in projects" :key="project.name" class="border-2 border-dashed rounded-3xl p-8">
       <h2 class="flex justify-between">
         <a class="text-xl underline" :href="project.url">{{ project.name }}</a>
         <a rel="noopener" target="_blank" :href="project.repo">

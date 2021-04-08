@@ -5,7 +5,7 @@ const emit = defineEmit(['showProjects', 'showAboutMe'])
 </script>
 
 <template>
-  <header>
+  <header class="max-w-xl mx-auto py-16">
     <h1 class="text-5xl font-bold">
       Hi,<br />I'm Manuel Quarneti
     </h1>
@@ -25,7 +25,7 @@ const emit = defineEmit(['showProjects', 'showAboutMe'])
       </a>
     </div>
 
-    <div class="flex justify-between my-8">
+    <div class="flex justify-between mt-10">
       <button class="font-medium text-gray-500 hover:text-gray-900 dark:hover:text-gray-400" @click="emit('showProjects')">
         My projects
       </button>
