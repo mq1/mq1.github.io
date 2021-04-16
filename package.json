@@ -23,6 +23,6 @@
     "vite-plugin-icons": "^0.5.0",
     "vite-plugin-windicss": "^0.12.1",
     "vite-ssg": "^0.9.1",
-    "vue-tsc": "^0.0.15"
+    "vue-tsc": "^0.0.24"
   }
 }
