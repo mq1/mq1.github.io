@@ -1,6 +1,12 @@
 <script setup lang="ts">
 const projects = [
   {
+    name: 'runmc',
+    url: 'https://github.com/mq1/runmc',
+    repo: 'https://github.com/mq1/runmc',
+    desc: 'A minimal and lightweight Minecraft launcher written in Rust + TypeScript + Vue ',
+  },
+  {
     name: 'ALI (Arch Linux Installer)',
     url: 'https://mq1.eu/ali',
     repo: 'https://github.com/mq1/ali',
