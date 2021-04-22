@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.6.4",
-    "@iconify/json": "^1.1.331",
+    "@iconify/json": "^1.1.332",
     "@vitejs/plugin-vue": "^1.2.1",
     "@vue/compiler-sfc": "^3.0.5",
     "@vue/server-renderer": "^3.0.11",
