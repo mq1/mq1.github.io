@@ -15,7 +15,7 @@ specifiers:
   vite-plugin-windicss: 0.15.10
   vite-ssg: 0.9.3
   vue: 3.0.11
-  vue-tsc: 0.0.25
+  vue-tsc: 0.0.26
 
 dependencies:
   '@vueuse/head': 0.5.1_vue@3.0.11
@@ -34,7 +34,7 @@ devDependencies:
   vite-plugin-icons: 0.5.0_e53da9ecfc4a468dc706a6eab934cf63
   vite-plugin-windicss: 0.15.10_vite@2.2.3
   vite-ssg: 0.9.3_c298efaea711cd316b30ce0e19a11ecd
-  vue-tsc: 0.0.25
+  vue-tsc: 0.0.26
 
 packages:
 
@@ -3536,8 +3536,8 @@ packages:
     resolution: {integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==}
     dev: true
 
-  /vue-tsc/0.0.25:
-    resolution: {integrity: sha512-9cWIQxjoviLQE2o+8NVfycKeI6nlfPndTDvH9hhG2/5mQhixPYWzXgAjszLXa8pzLKnF3ZiAr/hrTxjIAai5+A==}
+  /vue-tsc/0.0.26:
+    resolution: {integrity: sha512-UtHrHPBp7mAFN0GfsPYUPWROCGAQMl/HYTGOJy5ufPzCMt5h0kS2HOgfj4qbLSUzuYsfBqTxEj2unuNrlbbvxA==}
     hasBin: true
     dependencies:
       unzipper: 0.10.11
