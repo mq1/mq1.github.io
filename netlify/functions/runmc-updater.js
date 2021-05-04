@@ -1,3 +1,5 @@
+const fetch = require('node-fetch')
+
 exports.handler = async(event, context) => {
   const target = event.queryStringParameters.target
   const currentVersion = event.queryStringParameters.current_version
