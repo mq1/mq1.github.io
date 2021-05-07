@@ -11,8 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mq1/styles@main/base.min.css">
 </head>
 
-<body x-data="app()"
-  x-init="fetch('/aboutMe').then(r => r.text()).then(t => $refs.aboutMe.innerHTML = t)">
+<body x-data="app()" x-init="fetch('/aboutMe').then(r => r.text()).then(t => $refs.aboutMe.innerHTML = t)">
   <header>
     <h1>
       Hi,<br />
@@ -60,9 +59,11 @@
       <button @click="showProjects = !showProjects; showAboutMe = false;">
         My projects
       </button>
-      <button>
-        My cv 🡣
-      </button>
+      <a href="/cv.pdf" style="text-decoration: none;">
+        <button>
+          My cv 🡣
+        </button>
+      </a>
       <button @click="showAboutMe = !showAboutMe; showProjects = false;">
         About me
       </button>
