@@ -8,8 +8,8 @@
   <title>Manuel Quarneti</title>
   <meta name="description" content="Manuel Quarneti's personal website.">
   <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/inter-ui@3.18.0/inter.min.css" defer>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mq1/styles@main/base.min.css" defer>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/inter-ui@3.18.0/inter.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mq1/styles@main/base.min.css">
 </head>
 
 <body x-data="app()" x-init="fetch('/aboutMe').then(r => r.text()).then(t => $refs.aboutMe.innerHTML = t)">
