@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manuel Quarneti</title>
   <meta name="description" content="Manuel Quarneti's personal website.">
-  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/inter-ui@3.18.0/inter.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mq1/styles@main/base.min.css">
+  <script type="module" src="/src/index.js"></script>
 </head>
 
 <body x-data="app()" x-init="fetch('/aboutMe').then(r => r.text()).then(t => $refs.aboutMe.innerHTML = t)">
@@ -59,11 +57,11 @@
       <template x-for="project in projects">
         <blockquote>
           <h2 style="display: flex; justify-content: space-between;">
-            <a x-text="project.name" :href="project.url"></span>
-              <a :href="project.repo">
-                <img alt="GitHub" height="32" width="32"
-                  src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/github.svg" />
-              </a>
+            <a x-text="project.name" :href="project.url"></a>
+            <a :href="project.repo">
+              <img alt="GitHub" height="32" width="32"
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v4/icons/github.svg" />
+            </a>
           </h2>
           <p x-text="project.desc"></p>
         </blockquote>
