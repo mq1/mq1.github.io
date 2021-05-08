@@ -1,3 +1,5 @@
+import 'alpinejs'
+
 import 'inter-ui'
 import 'styles'
-import 'alpinejs'
+import './index.css'
