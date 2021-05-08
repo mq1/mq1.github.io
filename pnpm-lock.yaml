@@ -1,11 +1,11 @@
 lockfileVersion: 5.3
 
 specifiers:
-  alpinejs: ^2.8.2
-  inter-ui: ^3.18.1
-  node-fetch: ^2.6.1
+  alpinejs: 2.8.2
+  inter-ui: 3.18.1
+  node-fetch: 2.6.1
   styles: github:mq1/styles#main
-  vite: ^2.2.4
+  vite: 2.2.4
 
 dependencies:
   node-fetch: 2.6.1
