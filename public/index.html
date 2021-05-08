@@ -38,7 +38,7 @@
     <br />
 
     <div>
-      <button @click="showProjects = !showProjects; showAboutMe = false;">
+      <button @click="show = show !== 'projects' ? 'projects' : ''">
         My projects
       </button>
       <a href="/cv.pdf" style="text-decoration: none;">
@@ -46,7 +46,7 @@
           My cv 🡣
         </button>
       </a>
-      <button @click="showAboutMe = !showAboutMe; showProjects = false;">
+      <button @click="show = show !== 'aboutMe' ? 'aboutMe' : ''">
         About me
       </button>
     </div>
@@ -54,7 +54,7 @@
 
   <main>
 
-    <div x-show="showProjects">
+    <div x-show="show === 'projects'">
       <template x-for="project in projects">
         <blockquote>
           <h2 style="display: flex; justify-content: space-between;">
@@ -69,7 +69,7 @@
       </template>
     </div>
 
-    <div x-show="showAboutMe" x-ref="aboutMe"></div>
+    <div x-show="show === 'aboutMe'" x-ref="aboutMe"></div>
 
   </main>
 
@@ -81,8 +81,7 @@
 
   <script>
     const app = () => ({
-      showProjects: false,
-      showAboutMe: false,
+      show: '',
       projects: [
         {
           name: 'runmc',
