@@ -1,0 +1,14 @@
+hi: Ciao,
+hi2: Sono Manuel Quarneti
+
+download-cv: Scarica il mio cv (pdf)
+about-me: Info su di me
+my-projects: I miei progetti
+
+projects:
+  runmc: Un launcher per Minecraft minimale e leggero
+  ali: Un installer (rotto) per Arch Linux
+  spotify: Un visualizzatore di statistiche per Spotify, parzialmente basato su antfu/vitesse
+  mq1: Il mio cv con generazione automatica di HTML e PDF
+  lurkmore: Un client (poco performante) per imageboard
+  website: Questo sito è open source ed è parzialmente basato su antfu/vitesse

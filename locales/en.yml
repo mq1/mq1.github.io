@@ -1,0 +1,14 @@
+hi: Hi,
+hi2: I'm Manuel Quarneti
+
+download-cv: Get my cv (pdf)
+about-me: About me
+my-projects: My projects
+
+projects:
+  runmc: A minimal and lightweight Minecraft launcher
+  ali: A (broken) Arch Linux Installer
+  spotify: A Spotify stats visualizer partially based on antfu/vitesse
+  mq1: My cv with automatic HTML and PDF generation
+  lurkmore: A (laggy) imageboard client
+  website: This website is open source and it's partially based on antfu/vitesse

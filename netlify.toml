@@ -13,18 +13,6 @@
   force = true
 
 [[redirects]]
-  from = "/cv.pdf"
-  to = "https://mq1.github.io/mq1/cv.pdf"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/aboutMe"
-  to = "https://mq1.github.io/mq1/index.html"
-  status = 200
-  force = true
-
-[[redirects]]
   from = "/ali"
   to = "https://raw.githubusercontent.com/mq1/ali/master/ali"
   status = 200

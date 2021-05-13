@@ -1,0 +1,87 @@
+<script setup lang="ts">
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
+
+const projects = [
+  {
+    name: 'runmc',
+    url: 'https://github.com/mq1/runmc',
+    repo: 'https://github.com/mq1/runmc',
+    desc: 'projects.runmc',
+    tech: [
+      'Rust',
+      'ViteJS',
+      'Vue',
+      'TypeScript',
+    ],
+  },
+  {
+    name: 'ALI (Arch Linux Installer)',
+    url: 'https://mq1.eu/ali',
+    repo: 'https://github.com/mq1/ali',
+    desc: 'projects.ali',
+    tech: [
+      'BASH',
+    ],
+  },
+  {
+    name: 'top-for-spotify',
+    url: 'https://mq1.eu/top-for-spotify/',
+    repo: 'https://github.com/mq1/top-for-spotify',
+    desc: 'projects.spotify',
+    tech: [
+      'ViteJS',
+      'Vue',
+      'TypeScript',
+    ],
+  },
+  {
+    name: 'mq1',
+    url: '/cv.pdf',
+    repo: 'https://github.com/mq1/mq1',
+    desc: 'projects.mq1',
+    tech: [
+      'Pandoc',
+      'Markdown',
+    ],
+  },
+  {
+    name: 'Lurkmore',
+    url: 'https://github.com/mq1/lurkmore',
+    repo: 'https://github.com/mq1/lurkmore',
+    desc: 'projects.lurkmore',
+    tech: [
+      'Flutter',
+    ],
+  },
+  {
+    name: 'This website',
+    url: '/',
+    repo: 'https://github.com/mq1/mq1.eu',
+    desc: 'projects.website',
+    tech: [
+      'ViteJS',
+      'Vue',
+      'TypeScript',
+    ],
+  },
+]
+</script>
+
+<template>
+  <div v-for="project in projects" :key="project.name" class="box flex flex-col gap-y-2">
+    <h2 class="flex justify-between">
+      <a class="text-xl underline" :href="project.url">{{ project.name }}</a>
+      <a rel="noopener" target="_blank" :href="project.repo">
+        <carbon-logo-github class="w-6 h-6" />
+      </a>
+    </h2>
+    <p>{{ t(project.desc) }}</p>
+    <div>
+      <i v-for="tech in project.tech" :key="tech">
+        #{{ tech }}
+      </i>
+    </div>
+  </div>
+</template>
