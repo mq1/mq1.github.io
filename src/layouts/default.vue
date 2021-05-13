@@ -18,6 +18,21 @@ const setLocale = (code: string) => {
           {{ t('hi2') }}
         </h1>
 
+        <div class="flex gap-2 mt-2">
+          <a href="https://github.com/mq1/">
+            <carbon-logo-github class="w-6 h-6" />
+          </a>
+          <a href="https://linkedin.com/in/mq1/">
+            <carbon-logo-linkedin class="w-6 h-6" />
+          </a>
+          <a href="mailto:manuelquarneti@gmail.com">
+            <carbon-email class="w-6 h-6" />
+          </a>
+          <a href="https://t.me/quarno">
+            <carbon-send-alt class="w-6 h-6" />
+          </a>
+        </div>
+
         <div class="flex justify-between mt-4">
           <div class="flex gap-x-4">
             <a class="underline" :href="`https://mq1.github.io/mq1/${locale}.pdf`">
