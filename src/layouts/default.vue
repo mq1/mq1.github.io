@@ -10,7 +10,7 @@ const setLocale = (code: string) => {
 
 <template>
   <div class="dark:bg-black dark:text-white">
-    <div class="flex flex-col justify-between gap-y-8 min-h-screen max-w-7xl mx-auto p-8">
+    <div class="flex flex-col justify-between gap-y-8 min-h-screen max-w-7xl mx-auto p-4 sm:p-8">
       <header class="box">
         <h1 class="text-5xl">
           {{ t('hi') }}
@@ -33,7 +33,7 @@ const setLocale = (code: string) => {
           </a>
         </div>
 
-        <div class="flex justify-between mt-4">
+        <div class="flex flex-wrap justify-between gap-y-4 mt-4">
           <div class="flex gap-x-4">
             <a class="underline" :href="`https://mq1.github.io/mq1/${locale}.pdf`">
               {{ t('download-cv') }}
@@ -62,7 +62,7 @@ const setLocale = (code: string) => {
         <router-view />
       </main>
 
-      <footer class="mx-auto">
+      <footer class="text-center">
         MIT Licensed |
         © 2021 Manuel Quarneti |
         Hosted on Netlify |
