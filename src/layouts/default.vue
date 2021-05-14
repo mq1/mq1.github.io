@@ -39,19 +39,23 @@ const setLocale = (code: string) => {
               {{ t('download-cv') }}
             </a>
 
-            <router-link class="underline" to="/about-me">
-              {{ t('about-me') }}
+            <router-link v-slot="{ isExactActive }" to="/about-me">
+              <div class="underline" :class="isExactActive && 'font-bold'">
+                {{ t('about-me') }}
+              </div>
             </router-link>
 
-            <router-link class="underline" to="/projects">
-              {{ t('my-projects') }}
+            <router-link v-slot="{ isExactActive }" to="/projects">
+              <div class="underline" :class="isExactActive && 'font-bold'">
+                {{ t('my-projects') }}
+              </div>
             </router-link>
           </div>
           <div class="flex gap-x-4">
-            <button class="underline" @click="setLocale('en')">
+            <button class="underline" :class="locale === 'en' && 'font-bold'" @click="setLocale('en')">
               EN
             </button>
-            <button class="underline" @click="setLocale('it')">
+            <button class="underline" :class="locale === 'it' && 'font-bold'" @click="setLocale('it')">
               IT
             </button>
           </div>
