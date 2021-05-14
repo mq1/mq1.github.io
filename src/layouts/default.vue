@@ -2,10 +2,6 @@
 import { useI18n } from 'vue-i18n'
 
 const { t, locale } = useI18n()
-
-const setLocale = (code: string) => {
-  locale.value = code
-}
 </script>
 
 <template>
@@ -52,10 +48,10 @@ const setLocale = (code: string) => {
             </router-link>
           </div>
           <div class="flex gap-x-4">
-            <button class="underline" :class="locale === 'en' && 'font-bold'" @click="setLocale('en')">
+            <button class="underline" :class="locale === 'en' && 'font-bold'" @click="locale = 'en'">
               EN
             </button>
-            <button class="underline" :class="locale === 'it' && 'font-bold'" @click="setLocale('it')">
+            <button class="underline" :class="locale === 'it' && 'font-bold'" @click="locale = 'it'">
               IT
             </button>
           </div>
