@@ -12,7 +12,7 @@ const setLocale = (code: string) => {
   <div class="dark:bg-black dark:text-white">
     <div class="flex flex-col justify-between gap-y-8 min-h-screen max-w-7xl mx-auto p-4 sm:p-8">
       <header class="box">
-        <h1 class="text-5xl font-semibold">
+        <h1 class="text-5xl font-bold">
           {{ t('hi') }}
           <br />
           {{ t('hi2') }}
