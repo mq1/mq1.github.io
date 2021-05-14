@@ -10,6 +10,7 @@ const projects = [
     repo: 'https://github.com/mq1/runmc',
     desc: 'projects.runmc',
     tech: [
+      'Tauri',
       'Rust',
       'ViteJS',
       'Vue',
