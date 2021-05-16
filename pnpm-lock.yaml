@@ -1,28 +1,28 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@antfu/eslint-config': ^0.6.5
-  '@iconify/json': ^1.1.343
-  '@intlify/vite-plugin-vue-i18n': ^2.1.2
-  '@vitejs/plugin-vue': ^1.2.2
-  '@vue/compiler-sfc': ^3.0.11
-  '@vue/server-renderer': ^3.0.11
-  '@vueuse/head': ^0.5.1
-  eslint: ^7.26.0
-  inter-ui: ^3.18.1
-  node-fetch: ^2.6.1
-  typescript: ^4.2.4
-  vite: ^2.3.2
-  vite-plugin-components: ^0.9.1
-  vite-plugin-icons: ^0.5.0
-  vite-plugin-pages: ^0.11.3
-  vite-plugin-vue-layouts: ^0.3.1
-  vite-plugin-windicss: ^0.15.10
-  vite-ssg: ^0.10.0
-  vue: ^3.0.11
-  vue-i18n: ^9.1.6
-  vue-router: ^4.0.8
-  vue-tsc: ^0.1.2
+  '@antfu/eslint-config': 0.6.5
+  '@iconify/json': 1.1.343
+  '@intlify/vite-plugin-vue-i18n': 2.1.2
+  '@vitejs/plugin-vue': 1.2.2
+  '@vue/compiler-sfc': 3.0.11
+  '@vue/server-renderer': 3.0.11
+  '@vueuse/head': 0.5.1
+  eslint: 7.26.0
+  inter-ui: 3.18.1
+  node-fetch: 2.6.1
+  typescript: 4.2.4
+  vite: 2.3.2
+  vite-plugin-components: 0.9.1
+  vite-plugin-icons: 0.5.1
+  vite-plugin-pages: 0.11.3
+  vite-plugin-vue-layouts: 0.3.1
+  vite-plugin-windicss: 0.15.10
+  vite-ssg: 0.10.0
+  vue: 3.0.11
+  vue-i18n: 9.1.6
+  vue-router: 4.0.8
+  vue-tsc: 0.1.2
 
 dependencies:
   '@vueuse/head': 0.5.1_vue@3.0.11
@@ -43,7 +43,7 @@ devDependencies:
   typescript: 4.2.4
   vite: 2.3.2
   vite-plugin-components: 0.9.1_vite@2.3.2
-  vite-plugin-icons: 0.5.0_445ad0acd1c65346e187200a876939c2
+  vite-plugin-icons: 0.5.1_445ad0acd1c65346e187200a876939c2
   vite-plugin-pages: 0.11.3_vite@2.3.2+vue@3.0.11
   vite-plugin-vue-layouts: 0.3.1_vite@2.3.2
   vite-plugin-windicss: 0.15.10_vite@2.3.2
@@ -5013,8 +5013,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-icons/0.5.0_445ad0acd1c65346e187200a876939c2:
-    resolution: {integrity: sha512-YsnoYixkp0HVIx6SvQWTyXXiWBCfc9gtKx3iqyPmN4fsE5hf7NvPp1LKiIazilP+zRUvHEyNeEbH4y6wUX8jMw==}
+  /vite-plugin-icons/0.5.1_445ad0acd1c65346e187200a876939c2:
+    resolution: {integrity: sha512-snEQYVnZ7NFEShFpki3vL9vj8k7M60PO6SXQTZgzIgrwlVsTsGzgsLw8B73v4DzEygPS7wuw3q6XqlZDVUMSiQ==}
     peerDependencies:
       '@iconify/json': '*'
       '@vue/compiler-sfc': ^3.0.2
