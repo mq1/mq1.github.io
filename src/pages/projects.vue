@@ -28,7 +28,7 @@ const projects = [
   },
   {
     name: 'top-for-spotify',
-    url: 'https://mq1.eu/top-for-spotify/',
+    url: '/top-for-spotify/',
     repo: 'https://github.com/mq1/top-for-spotify',
     desc: 'projects.spotify',
     tech: [
@@ -39,7 +39,7 @@ const projects = [
   },
   {
     name: 'mq1',
-    url: '/cv.pdf',
+    url: 'https://github.com/mq1/mq1',
     repo: 'https://github.com/mq1/mq1',
     desc: 'projects.mq1',
     tech: [
