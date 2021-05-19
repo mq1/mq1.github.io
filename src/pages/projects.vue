@@ -45,6 +45,7 @@ const projects = [
     tech: [
       'Pandoc',
       'Markdown',
+      'LaTeX',
     ],
   },
   {
