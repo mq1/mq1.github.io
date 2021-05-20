@@ -62,7 +62,7 @@ const { t, locale } = useI18n()
         <router-view />
       </main>
 
-      <footer class="flex items-center justify-center divide-x-2">
+      <footer class="flex justify-center divide-x-2">
         <div class="px-2 flex items-center">
           MIT Licensed
         </div>
