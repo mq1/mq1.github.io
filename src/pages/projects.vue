@@ -81,7 +81,7 @@ const projects = [
     </h2>
     <p>{{ t(project.desc) }}</p>
     <div>
-      <i v-for="tech in project.tech" :key="tech">
+      <i v-for="tech in project.tech" :key="tech" class="text-gray-500 dark:text-gray-400">
         #{{ tech }}
       </i>
     </div>
