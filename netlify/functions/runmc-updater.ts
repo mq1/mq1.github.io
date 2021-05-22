@@ -1,8 +1,10 @@
-const fetch = require('node-fetch')
+import { Handler } from '@netlify/functions'
+import fetch from 'node-fetch'
 
-exports.handler = async(event, context) => {
-  const target = event.queryStringParameters.target
-  const currentVersion = event.queryStringParameters.current_version
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const handler: Handler = async(event, context) => {
+  const target = event.queryStringParameters!.target
+  const currentVersion = event.queryStringParameters!.current_version
 
   const res = await fetch('https://api.github.com/repos/mq1/runmc/releases/latest')
   const json = await res.json()

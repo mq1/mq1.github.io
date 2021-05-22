@@ -18,6 +18,8 @@
     "@antfu/eslint-config": "0.6.5",
     "@iconify/json": "1.1.347",
     "@intlify/vite-plugin-vue-i18n": "2.1.2",
+    "@netlify/functions": "^0.7.2",
+    "@types/node-fetch": "^2.5.10",
     "@types/nprogress": "^0.2.0",
     "@vitejs/plugin-vue": "1.2.2",
     "@vue/compiler-sfc": "3.0.11",
