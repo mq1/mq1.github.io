@@ -26,7 +26,7 @@ export default defineConfig({
       customComponentResolvers: [
         ViteIconsResolver({
           componentPrefix: '',
-          enabledCollections: ['carbon'],
+          enabledCollections: ['feather'],
         }),
       ],
     }),

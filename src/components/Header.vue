@@ -14,16 +14,16 @@ const { t, locale } = useI18n()
 
     <div class="flex gap-2 mt-2">
       <a href="https://github.com/mq1/">
-        <carbon-logo-github class="w-6 h-6" />
+        <feather-github class="w-6 h-6" />
       </a>
       <a href="https://linkedin.com/in/mq1/">
-        <carbon-logo-linkedin class="w-6 h-6" />
+        <feather-linkedin class="w-6 h-6" />
       </a>
       <a href="mailto:manuelquarneti@gmail.com">
-        <carbon-email class="w-6 h-6" />
+        <feather-mail class="w-6 h-6" />
       </a>
       <a href="https://t.me/quarno">
-        <carbon-send-alt class="w-6 h-6" />
+        <feather-send class="w-6 h-6" />
       </a>
     </div>
 

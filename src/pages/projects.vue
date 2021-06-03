@@ -76,7 +76,7 @@ const projects = [
     <h2 class="flex justify-between">
       <a class="text-xl underline" :href="project.url">{{ project.name }}</a>
       <a rel="noopener" target="_blank" :href="project.repo">
-        <carbon-logo-github class="w-6 h-6" />
+        <feather-github class="w-6 h-6" />
       </a>
     </h2>
     <p>{{ t(project.desc) }}</p>
