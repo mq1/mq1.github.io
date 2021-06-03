@@ -1,5 +1,35 @@
+body {
+  @apply bg-gray-200;
+}
+
+button {
+  @apply focus:outline-none;
+}
+
+.btn {
+  @apply
+    border-2 border-primary-500 rounded-lg flex items-center px-2 py-1 shadow-lg bg-white
+    transition duration-200 ease-in-out hover:bg-primary-500 hover:text-white
+  ;
+}
+
 .box {
-  @apply bg-gray-200 dark:bg-gray-800 rounded-3xl p-8;
+  @apply bg-white dark:bg-black rounded-3xl p-8 shadow-lg;
+}
+
+.tabs {
+  @apply border-2 border-primary-500 rounded-lg flex whitespace-nowrap overflow-hidden;
+}
+
+.tabs * {
+  @apply
+    px-2 py-1 flex-1
+    trasition duration-200 ease-in-out hover:bg-primary-200
+  ;
+}
+
+.tab-active, .tabs .router-link-exact-active {
+  @apply bg-primary-500 text-white hover:bg-primary-500;
 }
 
 #nprogress {
@@ -7,7 +37,7 @@
 }
 
 #nprogress .bar {
-  @apply bg-gray-600 opacity-75;
+  @apply bg-primary-600 opacity-75;
 
   position: fixed;
   z-index: 1031;

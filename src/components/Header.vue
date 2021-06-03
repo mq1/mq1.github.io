@@ -29,27 +29,26 @@ const { t, locale } = useI18n()
 
     <div class="flex flex-wrap justify-between gap-y-4 mt-4">
       <div class="flex gap-x-4">
-        <a class="underline" :href="`https://mq1.github.io/mq1/${locale}.pdf`">
+        <a class="btn" :href="`https://mq1.github.io/mq1/${locale}.pdf`">
           {{ t('download-cv') }}
         </a>
 
-        <router-link v-slot="{ isExactActive }" to="/about-me">
-          <div class="underline" :class="isExactActive && 'font-bold'">
+        <div class="tabs">
+          <router-link to="/about-me">
             {{ t('about-me') }}
-          </div>
-        </router-link>
+          </router-link>
 
-        <router-link v-slot="{ isExactActive }" to="/projects">
-          <div class="underline" :class="isExactActive && 'font-bold'">
+          <router-link to="/projects">
             {{ t('my-projects') }}
-          </div>
-        </router-link>
+          </router-link>
+        </div>
       </div>
-      <div class="flex gap-x-4">
-        <button class="underline" :class="locale === 'en' && 'font-bold'" @click="locale = 'en'">
+
+      <div class="tabs">
+        <button :class="locale === 'en' && 'tab-active'" @click="locale = 'en'">
           EN
         </button>
-        <button class="underline" :class="locale === 'it' && 'font-bold'" @click="locale = 'it'">
+        <button :class="locale === 'it' && 'tab-active'" @click="locale = 'it'">
           IT
         </button>
       </div>

@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex justify-center divide-x-2">
+  <footer class="flex justify-center divide-x-2 divide-gray-500">
     <div class="px-2 flex items-center">
       MIT Licensed
     </div>

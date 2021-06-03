@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite-plugin-windicss'
+import colors from 'windicss/colors'
 
 export default defineConfig({
   darkMode: 'media',
@@ -7,6 +8,9 @@ export default defineConfig({
       sans: ['Inter var', 'sans-serif'],
     },
     extend: {
+      colors: {
+        primary: colors.blueGray,
+      },
       typography: {
         DEFAULT: {
           css: {
