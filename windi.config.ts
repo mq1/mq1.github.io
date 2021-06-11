@@ -9,7 +9,7 @@ export default defineConfig({
     },
     extend: {
       colors: {
-        primary: colors.blueGray,
+        primary: colors.blue,
       },
       typography: {
         DEFAULT: {

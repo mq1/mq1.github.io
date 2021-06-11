@@ -1,5 +1,5 @@
 body {
-  @apply bg-gray-200 dark:bg-gray-800 dark:text-white;
+  @apply dark:bg-black dark:text-white;
 }
 
 button {
@@ -15,7 +15,7 @@ button {
 }
 
 .box {
-  @apply bg-white dark:bg-black rounded-3xl p-8 shadow-lg;
+  @apply bg-white dark:bg-black rounded-3xl p-8 border-2 shadow-lg;
 }
 
 .tabs {
