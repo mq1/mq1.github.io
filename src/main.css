@@ -8,18 +8,18 @@ button {
 
 .btn {
   @apply
-    border-2 border-primary-500 rounded-lg flex items-center px-2 py-1 shadow-lg bg-white
+    border border-primary-500 rounded-lg flex items-center px-2 py-1 shadow-lg bg-white
     transition duration-200 ease-in-out hover:bg-primary-500 hover:text-white
     dark:bg-black
   ;
 }
 
 .box {
-  @apply bg-white dark:bg-black rounded-3xl p-8 border-2 shadow-lg;
+  @apply bg-white dark:bg-black rounded-3xl p-8 border shadow-lg;
 }
 
 .tabs {
-  @apply border-2 border-primary-500 rounded-lg flex whitespace-nowrap overflow-hidden;
+  @apply border rounded-lg flex whitespace-nowrap overflow-hidden;
 }
 
 .tabs * {
