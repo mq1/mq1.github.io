@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@vueuse/head": "^0.5.1",
-    "inter-ui": "^3.19.0",
+    "inter-ui": "^3.19.1",
     "nprogress": "^0.2.0",
     "vue": "^3.0.11",
     "vue-i18n": "^9.1.6",
