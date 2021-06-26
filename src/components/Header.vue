@@ -28,7 +28,7 @@ const { t, locale } = useI18n()
     </div>
 
     <div class="flex flex-wrap justify-between gap-y-4 mt-4">
-      <div class="flex gap-x-4">
+      <div class="flex flex-wrap gap-4">
         <a class="btn" :href="`https://mq1.github.io/mq1/${locale}.pdf`">
           {{ t('download-cv') }}
         </a>
