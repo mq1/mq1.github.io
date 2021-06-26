@@ -5,6 +5,10 @@ declare module 'vue' {
   export interface GlobalComponents {
     Footer: typeof import('./src/components/Footer.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
+    FeatherGithub: typeof import('virtual:vite-icons/feather/github')['default']
+    FeatherLinkedin: typeof import('virtual:vite-icons/feather/linkedin')['default']
+    FeatherMail: typeof import('virtual:vite-icons/feather/mail')['default']
+    FeatherSend: typeof import('virtual:vite-icons/feather/send')['default']
   }
 }
 
