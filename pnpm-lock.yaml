@@ -2,30 +2,30 @@ lockfileVersion: 5.3
 
 specifiers:
   '@antfu/eslint-config': ^0.6.6
-  '@iconify/json': ^1.1.362
-  '@intlify/vite-plugin-vue-i18n': ^2.2.1
+  '@iconify/json': ^1.1.369
+  '@intlify/vite-plugin-vue-i18n': ^2.3.0
   '@netlify/functions': ^0.7.2
   '@types/node-fetch': ^2.5.10
   '@types/nprogress': ^0.2.0
-  '@typescript-eslint/eslint-plugin': ^4.28.0
+  '@typescript-eslint/eslint-plugin': ^4.28.1
   '@vitejs/plugin-vue': ^1.2.4
-  '@vue/compiler-sfc': ^3.1.2
-  '@vue/server-renderer': ^3.1.2
+  '@vue/compiler-sfc': ^3.1.4
+  '@vue/server-renderer': ^3.1.4
   '@vueuse/head': ^0.6.0
   cross-env: ^7.0.3
   eslint: ^7.29.0
   inter-ui: ^3.19.2
   node-fetch: ^2.6.1
   nprogress: ^0.2.0
-  typescript: ^4.3.4
+  typescript: ^4.3.5
   vite: ^2.3.8
-  vite-plugin-components: ^0.11.2
+  vite-plugin-components: ^0.12.0
   vite-plugin-icons: ^0.6.3
-  vite-plugin-pages: ^0.14.2
+  vite-plugin-pages: ^0.14.8
   vite-plugin-vue-layouts: ^0.3.1
-  vite-plugin-windicss: ^1.1.1
+  vite-plugin-windicss: ^1.2.0
   vite-ssg: ^0.11.4
-  vue: ^3.1.2
+  vue: ^3.1.4
   vue-i18n: ^9.1.6
   vue-router: ^4.0.10
   vue-tsc: ^0.2.0
@@ -54,7 +54,7 @@ devDependencies:
   node-fetch: 2.6.1
   typescript: 4.3.5
   vite: 2.3.8
-  vite-plugin-components: 0.11.5_vite@2.3.8
+  vite-plugin-components: 0.12.0_vite@2.3.8
   vite-plugin-icons: 0.6.3_6e296531fbf664a5eb913b327fa48fa1
   vite-plugin-pages: 0.14.8_vite@2.3.8
   vite-plugin-vue-layouts: 0.3.1_vite@2.3.8
@@ -1116,14 +1116,6 @@ packages:
       color-convert: 2.0.1
     dev: true
 
-  /anymatch/3.1.2:
-    resolution: {integrity: sha512-P43ePfOAIupkguHUycrc4qJ9kz8ZiuOUijaETwX7THt0Y/GNK7v0aa8rY816xWjZ7rJdA5XdMcpVFTKMq+RvWg==}
-    engines: {node: '>= 8'}
-    dependencies:
-      normalize-path: 3.0.0
-      picomatch: 2.3.0
-    dev: true
-
   /argparse/1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
     dependencies:
@@ -1218,11 +1210,6 @@ packages:
 
   /big.js/5.2.2:
     resolution: {integrity: sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==}
-    dev: true
-
-  /binary-extensions/2.2.0:
-    resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
-    engines: {node: '>=8'}
     dev: true
 
   /bluebird/3.7.2:
@@ -1365,21 +1352,6 @@ packages:
     resolution: {integrity: sha1-x84o821LzZdE5f/CxfzeHHMmH8A=}
     dependencies:
       is-regex: 1.1.3
-    dev: true
-
-  /chokidar/3.5.2:
-    resolution: {integrity: sha512-ekGhOnNVPgT77r4K/U3GDhu+FQ2S8TnK/s2KbIGXi0SZWuwkZ2QNyfWdZW+TVfn84DpEP7rLeCt2UI6bJ8GwbQ==}
-    engines: {node: '>= 8.10.0'}
-    dependencies:
-      anymatch: 3.1.2
-      braces: 3.0.2
-      glob-parent: 5.1.2
-      is-binary-path: 2.1.0
-      is-glob: 4.0.1
-      normalize-path: 3.0.0
-      readdirp: 3.6.0
-    optionalDependencies:
-      fsevents: 2.3.2
     dev: true
 
   /ci-info/2.0.0:
@@ -2768,13 +2740,6 @@ packages:
     resolution: {integrity: sha512-0JV5+SOCQkIdzjBK9buARcV804Ddu7A0Qet6sHi3FimE9ne6m4BGQZfRn+NZiXbBk4F4XmHfDZIipLj9pX8dSA==}
     dev: true
 
-  /is-binary-path/2.1.0:
-    resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
-    engines: {node: '>=8'}
-    dependencies:
-      binary-extensions: 2.2.0
-    dev: true
-
   /is-boolean-object/1.1.1:
     resolution: {integrity: sha512-bXdQWkECBUIAcCkeH1unwJLIpZYaa5VvuygSyS/c2lf719mTKZDU5UdDRlpd01UjADgmW8RfqaP+mRaVPdr/Ng==}
     engines: {node: '>= 0.4'}
@@ -3420,11 +3385,6 @@ packages:
       validate-npm-package-license: 3.0.4
     dev: true
 
-  /normalize-path/3.0.0:
-    resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
-    engines: {node: '>=0.10.0'}
-    dev: true
-
   /normalize-url/4.5.1:
     resolution: {integrity: sha512-9UZCFRHQdNrfTpGg8+1INIg93B6zE0aXMVFkw1WFwvO4SlZywU6aLg5Of0Ap/PgcbSw4LNxvMWXMeugwMCX0AA==}
     engines: {node: '>=8'}
@@ -4033,13 +3993,6 @@ packages:
       safe-buffer: 5.1.2
       string_decoder: 1.1.1
       util-deprecate: 1.0.2
-    dev: true
-
-  /readdirp/3.6.0:
-    resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
-    engines: {node: '>=8.10.0'}
-    dependencies:
-      picomatch: 2.3.0
     dev: true
 
   /redent/2.0.0:
@@ -4882,12 +4835,11 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite-plugin-components/0.11.5_vite@2.3.8:
-    resolution: {integrity: sha512-v7x2mdAIeSsc9pD2UmufE8uhXNWa4h8ohKTkhLMCKshwsoqo96MmZz0iegrBttCsjqoosYpBFUxYVmC758mJjw==}
+  /vite-plugin-components/0.12.0_vite@2.3.8:
+    resolution: {integrity: sha512-LJAn25KFLFw97mNQw74fsWvGAaaFXbDNGkReFpITPtIrmdRrwWowieg23INXAniPaGJVIhspLk0ippMPi/q0qA==}
     peerDependencies:
       vite: ^2.0.0
     dependencies:
-      chokidar: 3.5.2
       debug: 4.3.2
       fast-glob: 3.2.6
       magic-string: 0.25.7
