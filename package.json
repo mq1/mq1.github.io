@@ -20,7 +20,7 @@
     "@netlify/functions": "0.7.2",
     "@types/node-fetch": "2.5.11",
     "@types/nprogress": "0.2.0",
-    "@typescript-eslint/eslint-plugin": "4.28.1",
+    "@typescript-eslint/eslint-plugin": "4.28.2",
     "@vitejs/plugin-vue": "1.2.4",
     "@vue/compiler-sfc": "3.1.4",
     "@vue/server-renderer": "3.1.4",
