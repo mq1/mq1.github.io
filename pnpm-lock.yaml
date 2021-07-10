@@ -19,7 +19,7 @@ specifiers:
   nprogress: 0.2.0
   typescript: 4.3.5
   vite: 2.3.8
-  vite-plugin-components: 0.12.0
+  vite-plugin-components: 0.12.2
   vite-plugin-icons: 0.6.4
   vite-plugin-pages: 0.14.8
   vite-plugin-vue-layouts: 0.3.1
@@ -54,7 +54,7 @@ devDependencies:
   node-fetch: 2.6.1
   typescript: 4.3.5
   vite: 2.3.8
-  vite-plugin-components: 0.12.0_vite@2.3.8
+  vite-plugin-components: 0.12.2_vite@2.3.8
   vite-plugin-icons: 0.6.4_eabf69b936f985b59eb886722573e211
   vite-plugin-pages: 0.14.8_vite@2.3.8
   vite-plugin-vue-layouts: 0.3.1_vite@2.3.8
@@ -4909,8 +4909,8 @@ packages:
       vfile-message: 2.0.4
     dev: true
 
-  /vite-plugin-components/0.12.0_vite@2.3.8:
-    resolution: {integrity: sha512-LJAn25KFLFw97mNQw74fsWvGAaaFXbDNGkReFpITPtIrmdRrwWowieg23INXAniPaGJVIhspLk0ippMPi/q0qA==}
+  /vite-plugin-components/0.12.2_vite@2.3.8:
+    resolution: {integrity: sha512-ecGCqEQMEwPw556WfdbRwbDsdGtBWkjSkuOXw5sKbgaZzVSlybOfrXhGjiYEatR13KCUxTHzioU2eOLu1tpWVQ==}
     peerDependencies:
       vite: ^2.0.0
     dependencies:
