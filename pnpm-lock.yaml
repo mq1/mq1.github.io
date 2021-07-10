@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@antfu/eslint-config': 0.6.6
-  '@iconify/json': 1.1.369
+  '@iconify/json': 1.1.372
   '@intlify/vite-plugin-vue-i18n': 2.3.1
   '@netlify/functions': 0.7.2
   '@types/node-fetch': 2.5.10
@@ -40,7 +40,7 @@ dependencies:
 
 devDependencies:
   '@antfu/eslint-config': 0.6.6_eslint@7.30.0+typescript@4.3.5
-  '@iconify/json': 1.1.369
+  '@iconify/json': 1.1.372
   '@intlify/vite-plugin-vue-i18n': 2.3.1_824ab5a69c9ad3499de0e495d84a1b54
   '@netlify/functions': 0.7.2
   '@types/node-fetch': 2.5.10
@@ -55,7 +55,7 @@ devDependencies:
   typescript: 4.3.5
   vite: 2.3.8
   vite-plugin-components: 0.12.0_vite@2.3.8
-  vite-plugin-icons: 0.6.4_6e296531fbf664a5eb913b327fa48fa1
+  vite-plugin-icons: 0.6.4_eabf69b936f985b59eb886722573e211
   vite-plugin-pages: 0.14.8_vite@2.3.8
   vite-plugin-vue-layouts: 0.3.1_vite@2.3.8
   vite-plugin-windicss: 1.2.0_vite@2.3.8
@@ -427,8 +427,8 @@ packages:
     resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
     dev: true
 
-  /@iconify/json/1.1.369:
-    resolution: {integrity: sha512-v0LY1A4MZKElKuVjXeDEjf4Em7RSsudb8IsT030R8+aE/IR9Jw6nMcg82rs7TKN/Yo1j9p3P2D10dVwfeeio8w==}
+  /@iconify/json/1.1.372:
+    resolution: {integrity: sha512-+Dr9qJyGGkoI3CPK8MV9wcmoXBcQR9k98X2b+7FPrZ6KzRzF0w3dKjTla61kaH5KOYIl2+CNAz+cm3Ns7f2FbQ==}
     dev: true
 
   /@intlify/cli/0.5.0_eslint@7.30.0:
@@ -4863,7 +4863,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-icons/0.6.4_6e296531fbf664a5eb913b327fa48fa1:
+  /vite-plugin-icons/0.6.4_eabf69b936f985b59eb886722573e211:
     resolution: {integrity: sha512-NLIUZNpeJV4fH314fn+iI5wxvKOgx2yDzVz6jqaKUyNIi41cv+Ud8J+dueCHVZSxepCIQmMYeCayaPEuhhetbg==}
     peerDependencies:
       '@iconify/json': '*'
@@ -4875,7 +4875,7 @@ packages:
       vue-template-compiler:
         optional: true
     dependencies:
-      '@iconify/json': 1.1.369
+      '@iconify/json': 1.1.372
       '@iconify/json-tools': 1.0.10
       '@vue/compiler-sfc': 3.1.4_vue@3.1.4
       vue-template-es2015-compiler: 1.9.1
