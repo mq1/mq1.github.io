@@ -23,7 +23,7 @@ specifiers:
   vite-plugin-icons: 0.6.5
   vite-plugin-pages: 0.14.9
   vite-plugin-vue-layouts: 0.3.1
-  vite-plugin-windicss: 1.2.0
+  vite-plugin-windicss: 1.2.4
   vite-ssg: 0.11.4
   vue: 3.1.4
   vue-i18n: 9.1.6
@@ -58,7 +58,7 @@ devDependencies:
   vite-plugin-icons: 0.6.5_eabf69b936f985b59eb886722573e211
   vite-plugin-pages: 0.14.9_vite@2.3.8
   vite-plugin-vue-layouts: 0.3.1_vite@2.3.8
-  vite-plugin-windicss: 1.2.0_vite@2.3.8
+  vite-plugin-windicss: 1.2.4_vite@2.3.8
   vite-ssg: 0.11.4_0dabf09deacd9998313be9e108cf83b5
   vue-tsc: 0.2.0_typescript@4.3.5+vue@3.1.4
 
@@ -1069,13 +1069,23 @@ packages:
       vue: 3.1.4
     dev: false
 
-  /@windicss/plugin-utils/1.2.0:
-    resolution: {integrity: sha512-6OAsyz2yI0VKNHACT35FjWWzMZlMEF7Z0pIiNUd9+R9jc73+qJcK1DRCZ3YxnjuGk0G76b542uXQEJgv2jL3vA==}
+  /@windicss/config/1.2.4:
+    resolution: {integrity: sha512-81oah5NF7m/ltHrP2VpKu12qejP03erelNckH9ho86vuItsSd/tNehW3oJqOThZYsbuROCzIU55QDfe7MBd+Iw==}
+    dependencies:
+      debug: 4.3.2
+      jiti: 1.10.1
+      windicss: 3.1.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /@windicss/plugin-utils/1.2.4:
+    resolution: {integrity: sha512-0G0zPx+gLfnP2isVMrsY+C0BDXASgFwtiT7g+YL+0LCTxjPxGOMnu5lCaAoYq+1LAskliPagqnu5mgKUYMyf2Q==}
     dependencies:
       '@antfu/utils': 0.2.4
+      '@windicss/config': 1.2.4
       debug: 4.3.2
       fast-glob: 3.2.6
-      jiti: 1.10.1
       magic-string: 0.25.7
       micromatch: 4.0.4
       windicss: 3.1.4
@@ -4969,12 +4979,12 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-windicss/1.2.0_vite@2.3.8:
-    resolution: {integrity: sha512-3teAmQHCDDDcy7On5fOj1sYTRVo8zAwJJd4SOapeGI7EuEzO2fHy6oDS6sPXVUnstbfoPbvrng1xvc3VAqI+sg==}
+  /vite-plugin-windicss/1.2.4_vite@2.3.8:
+    resolution: {integrity: sha512-U+mW8AiPRgC5wbUqjtvEIbZR3LzOwhNU0wnYQueT2SjjTfjlP74vcQg37yrULxycKibpdTYVHZuDuW4QkglPng==}
     peerDependencies:
       vite: ^2.0.1
     dependencies:
-      '@windicss/plugin-utils': 1.2.0
+      '@windicss/plugin-utils': 1.2.4
       chalk: 4.1.1
       debug: 4.3.2
       vite: 2.3.8
