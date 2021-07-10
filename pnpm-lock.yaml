@@ -5,7 +5,7 @@ specifiers:
   '@iconify/json': 1.1.372
   '@intlify/vite-plugin-vue-i18n': 2.3.1
   '@netlify/functions': 0.7.2
-  '@types/node-fetch': 2.5.10
+  '@types/node-fetch': 2.5.11
   '@types/nprogress': 0.2.0
   '@typescript-eslint/eslint-plugin': 4.28.1
   '@vitejs/plugin-vue': 1.2.4
@@ -43,7 +43,7 @@ devDependencies:
   '@iconify/json': 1.1.372
   '@intlify/vite-plugin-vue-i18n': 2.3.1_824ab5a69c9ad3499de0e495d84a1b54
   '@netlify/functions': 0.7.2
-  '@types/node-fetch': 2.5.10
+  '@types/node-fetch': 2.5.11
   '@types/nprogress': 0.2.0
   '@typescript-eslint/eslint-plugin': 4.28.1_eslint@7.30.0+typescript@4.3.5
   '@vitejs/plugin-vue': 1.2.4_@vue+compiler-sfc@3.1.4
@@ -705,8 +705,8 @@ packages:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
     dev: true
 
-  /@types/node-fetch/2.5.10:
-    resolution: {integrity: sha512-IpkX0AasN44hgEad0gEF/V6EgR5n69VEqPEgnmoM8GsIGro3PowbWs4tR6IhxUTyPLpOn+fiGG6nrQhcmoCuIQ==}
+  /@types/node-fetch/2.5.11:
+    resolution: {integrity: sha512-2upCKaqVZETDRb8A2VTaRymqFBEgH8u6yr96b/u3+1uQEPDRo3mJLEiPk7vdXBHRtjwkjqzFYMJXrt0Z9QsYjQ==}
     dependencies:
       '@types/node': 16.0.0
       form-data: 3.0.1
