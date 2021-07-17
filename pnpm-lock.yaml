@@ -2,7 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@antfu/eslint-config': 0.7.0
-  '@iconify/json': 1.1.376
+  '@iconify/json': 1.1.377
   '@intlify/vite-plugin-vue-i18n': 2.3.2
   '@netlify/functions': 0.7.2
   '@types/node-fetch': 2.5.11
@@ -40,7 +40,7 @@ dependencies:
 
 devDependencies:
   '@antfu/eslint-config': 0.7.0_eslint@7.30.0+typescript@4.3.5
-  '@iconify/json': 1.1.376
+  '@iconify/json': 1.1.377
   '@intlify/vite-plugin-vue-i18n': 2.3.2_0a635717b5e64442fc6b458be918e09b
   '@netlify/functions': 0.7.2
   '@types/node-fetch': 2.5.11
@@ -55,7 +55,7 @@ devDependencies:
   typescript: 4.3.5
   vite: 2.4.2
   vite-plugin-components: 0.12.2_vite@2.4.2
-  vite-plugin-icons: 0.6.5_48856c6513997477d61ef90d5dba57c3
+  vite-plugin-icons: 0.6.5_f8805ee500ec2bf5c86df944842cba47
   vite-plugin-pages: 0.15.0_d721cee1335e8c66be87b42b65e96079
   vite-plugin-vue-layouts: 0.3.1_vite@2.4.2
   vite-plugin-windicss: 1.2.4_vite@2.4.2
@@ -427,8 +427,8 @@ packages:
     resolution: {integrity: sha512-LFelJDOLZ6JHlmlAkgrvmcu4hpNPB91KYcr4f60D/exzU1eNOb4/KCVHIydGHIQFaOacIOD+Xy+B7P1z812cZg==}
     dev: true
 
-  /@iconify/json/1.1.376:
-    resolution: {integrity: sha512-mXUkFmPTV3lXdZsKqQCRuXvWXS37az0PhpHFaby9j1RI6CPs8selQ9rM2f8Rhu2gnjwDgbysldTjkFiH0uldZA==}
+  /@iconify/json/1.1.377:
+    resolution: {integrity: sha512-urnDGaueJyYK2/XtNxDKCCQYvhssrEFIBqquzAIca9NuRpTmXV9ND+87KADJBofZrx6VYZSRbG6Q4Hm6Y2AQ8Q==}
     dev: true
 
   /@intlify/bundle-utils/0.1.0_eslint@7.30.0:
@@ -5091,7 +5091,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-plugin-icons/0.6.5_48856c6513997477d61ef90d5dba57c3:
+  /vite-plugin-icons/0.6.5_f8805ee500ec2bf5c86df944842cba47:
     resolution: {integrity: sha512-lfePr8juO2ajp0571iLL+9zIoyBD9nSSSHlC4JYXbAeMOJB6WTP+Vdc2gze8yI8JRO+Z0TXCCvvL9bPgvkI4Cg==}
     peerDependencies:
       '@iconify/json': '*'
@@ -5103,7 +5103,7 @@ packages:
       vue-template-compiler:
         optional: true
     dependencies:
-      '@iconify/json': 1.1.376
+      '@iconify/json': 1.1.377
       '@iconify/json-tools': 1.0.10
       '@vue/compiler-sfc': 3.1.5_vue@3.1.5
       vue-template-es2015-compiler: 1.9.1
