@@ -6,6 +6,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@vueuse/core": "^5.1.4",
     "@vueuse/head": "^0.6.0",
     "inter-ui": "^3.19.2",
     "nprogress": "^0.2.0",

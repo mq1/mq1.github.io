@@ -1,90 +1,50 @@
-import { defineConfig } from 'vite-plugin-windicss'
+import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
+import typography from 'windicss/plugin/typography'
 
 export default defineConfig({
-  darkMode: 'media',
+  darkMode: 'class',
+  // https://windicss.org/posts/v30.html#attributify-mode
+  attributify: true,
+
+  plugins: [
+    typography(),
+  ],
   theme: {
     fontFamily: {
       sans: ['Inter var', 'sans-serif'],
     },
     extend: {
       colors: {
-        primary: colors.gray,
+        primary: colors.teal,
       },
       typography: {
         DEFAULT: {
           css: {
-            ul: {
-              'padding-left': '0px',
+            maxWidth: '65ch',
+            color: 'inherit',
+            a: {
+              'color': 'inherit',
+              'opacity': 0.75,
+              'fontWeight': '500',
+              'textDecoration': 'underline',
+              '&:hover': {
+                opacity: 1,
+                color: colors.teal[600],
+              },
             },
-            blockquote: {
-              margin: '0px',
-            },
-          },
-        },
-        light: {
-          css: {
-            'color': '#9ca3af', // gray-400
-            '[class~="lead"]': {
-              color: '#d1d5db', // gray-300
-            },
-            'a': {
-              color: '#fff', // white
-            },
-            'strong': {
-              color: '#fff', // white
-            },
-            'ol > li::before': {
-              color: '#9ca3af', // gray-400
-            },
-            'ul > li::before': {
-              backgroundColor: '#4b5563', // gray-600
-            },
-            'hr': {
-              borderColor: '#e5e7eb', // gray-200
-            },
-            'blockquote': {
-              color: '#e5e7eb', // gray-200
-              borderLeftColor: '#4b5563', // gray-600
-            },
-            'h1': {
-              color: '#fff', // white
-            },
-            'h2': {
-              color: '#fff', // white
-            },
-            'h3': {
-              color: '#fff', // white
-            },
-            'h4': {
-              color: '#fff', // white
-            },
-            'figure figcaption': {
-              color: '#9ca3af', // gray-400
-            },
-            'code': {
-              color: '#fff', // white
-            },
-            'a code': {
-              color: '#fff', // white
-            },
-            'pre': {
-              color: '#e5e7eb', // gray-200
-              backgroundColor: '#1f2937', // gray-800
-            },
-            'thead': {
-              color: '#fff', // white
-              borderBottomColor: '#9ca3af', // gray-400
-            },
-            'tbody tr': {
-              borderBottomColor: '#4b5563', // gray-600
-            },
+            b: { color: 'inherit' },
+            strong: { color: 'inherit' },
+            em: { color: 'inherit' },
+            h1: { color: 'inherit' },
+            h2: { color: 'inherit' },
+            h3: { color: 'inherit' },
+            h4: { color: 'inherit' },
+            code: { color: 'inherit' },
+            blockquote: { color: 'inherit' },
           },
         },
       },
     },
   },
-  plugins: [
-    require('windicss/plugin/typography'),
-  ],
 })

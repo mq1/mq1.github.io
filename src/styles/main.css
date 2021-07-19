@@ -3,7 +3,7 @@ body {
 }
 
 button {
-  @apply focus:outline-none;
+  @apply focus:outline-none flex items-center;
 }
 
 .btn {
@@ -19,13 +19,13 @@ button {
 }
 
 .tabs {
-  @apply border rounded-lg flex whitespace-nowrap overflow-hidden;
+  @apply border-2 rounded-lg flex items-center whitespace-nowrap overflow-hidden;
 }
 
 .tabs * {
   @apply
     px-2 py-1 flex-1
-    trasition duration-200 ease-in-out hover:bg-primary-200 dark:hover:bg-primary-800
+    trasition duration-200 ease-in-out hover:bg-primary-100 dark:hover:bg-primary-800
   ;
 }
 

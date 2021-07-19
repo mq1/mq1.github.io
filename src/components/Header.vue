@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import { isDark, toggleDark } from '~/logic'
 
 const { t, locale } = useI18n()
 </script>
@@ -44,12 +45,19 @@ const { t, locale } = useI18n()
         </div>
       </div>
 
-      <div class="tabs">
-        <button :class="locale === 'en' && 'tab-active'" @click="locale = 'en'">
-          EN
-        </button>
-        <button :class="locale === 'it' && 'tab-active'" @click="locale = 'it'">
-          IT
+      <div class="flex gap-x-4 items-center">
+        <div class="tabs">
+          <button :class="locale === 'en' && 'tab-active'" @click="locale = 'en'">
+            EN
+          </button>
+          <button :class="locale === 'it' && 'tab-active'" @click="locale = 'it'">
+            IT
+          </button>
+        </div>
+
+        <button class="btn py-2" @click="toggleDark">
+          <feather-moon v-if="isDark" />
+          <feather-sun v-else />
         </button>
       </div>
     </div>

@@ -6,7 +6,9 @@ declare module 'vue' {
     FeatherGithub: typeof import('virtual:vite-icons/feather/github')['default']
     FeatherLinkedin: typeof import('virtual:vite-icons/feather/linkedin')['default']
     FeatherMail: typeof import('virtual:vite-icons/feather/mail')['default']
+    FeatherMoon: typeof import('virtual:vite-icons/feather/moon')['default']
     FeatherSend: typeof import('virtual:vite-icons/feather/send')['default']
+    FeatherSun: typeof import('virtual:vite-icons/feather/sun')['default']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
   }
