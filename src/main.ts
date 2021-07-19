@@ -1,10 +1,22 @@
-import { setupLayouts } from 'virtual:generated-layouts'
-import generatedRoutes from 'virtual:generated-pages'
 import { ViteSSG } from 'vite-ssg'
+import generatedRoutes from 'virtual:generated-pages'
+import { setupLayouts } from 'virtual:generated-layouts'
 import App from './App.vue'
+
+// windicss layers
+import 'virtual:windi-base.css'
+import 'virtual:windi-components.css'
+// your custom styles here
 import 'inter-ui'
-import 'virtual:windi.css'
-import './main.css'
+import './styles/main.css'
+// windicss utilities should be the last style import
+import 'virtual:windi-utilities.css'
+
+// windicss devtools support (dev only)
+import 'virtual:windi-devtools'
+
+// register vue composition api globally
+import 'vue-global-api'
 
 const routes = setupLayouts(generatedRoutes)
 
