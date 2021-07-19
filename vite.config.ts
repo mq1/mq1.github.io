@@ -34,6 +34,8 @@ export default defineConfig({
 
     // https://github.com/intlify/vite-plugin-vue-i18n
     VueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
       include: [path.resolve(__dirname, 'locales/**')],
     }),
   ],
@@ -48,6 +50,7 @@ export default defineConfig({
     include: [
       'vue',
       'vue-router',
+      '@vueuse/core',
     ],
     exclude: [
       'vue-demi',
