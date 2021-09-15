@@ -4,6 +4,9 @@ import typography from 'windicss/plugin/typography'
 
 export default defineConfig({
   darkMode: 'class',
+  // https://windicss.org/posts/v30.html#attributify-mode
+  attributify: true,
+
   plugins: [
     typography(),
   ],
@@ -12,9 +15,6 @@ export default defineConfig({
       sans: ['Inter var', 'sans-serif'],
     },
     extend: {
-      colors: {
-        primary: colors.teal,
-      },
       typography: {
         DEFAULT: {
           css: {
@@ -38,7 +38,6 @@ export default defineConfig({
             h3: { color: 'inherit' },
             h4: { color: 'inherit' },
             code: { color: 'inherit' },
-            blockquote: { color: 'inherit' },
           },
         },
       },
