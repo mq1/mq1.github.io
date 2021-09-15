@@ -38,6 +38,7 @@ export default defineConfig({
             h3: { color: 'inherit' },
             h4: { color: 'inherit' },
             code: { color: 'inherit' },
+            blockquote: { color: 'inherit' },
           },
         },
       },

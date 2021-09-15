@@ -9,5 +9,5 @@ watch(locale, getAboutMe)
 </script>
 
 <template>
-  <div class="prose dark:prose-light max-w-full box" v-html="aboutMe"></div>
+  <div class="prose max-w-full" v-html="aboutMe"></div>
 </template>
