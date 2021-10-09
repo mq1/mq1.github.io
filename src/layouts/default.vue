@@ -9,6 +9,8 @@ import { author } from '~/../package.json'
     <router-view />
   </main>
 
+  <hr />
+
   <footer>
     © {{ new Date().getFullYear() }} {{ author }}
   </footer>
