@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { locale } = useI18n()
+const { t, locale } = useI18n()
 
 const aboutMe = ref('')
 const getAboutMe = () => fetch(`https://mq1.github.io/mq1/${locale.value}`).then(r => r.text()).then(t => aboutMe.value = t)
@@ -9,5 +9,9 @@ watch(locale, getAboutMe)
 </script>
 
 <template>
-  <div class="prose max-w-full" v-html="aboutMe"></div>
+  <a :href="`https://mq1.github.io/mq1/${locale.value}.pdf`">
+    <button>{{ t('download-pdf') }}</button>
+  </a>
+  <hr />
+  <div v-html="aboutMe"></div>
 </template>

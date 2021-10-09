@@ -1,8 +1,7 @@
-hi: Ciao,
-hi2: Sono Manuel Quarneti
+hi: Ciao, Sono Manuel Quarneti
 
-download-cv: Scarica il mio cv (pdf)
-about-me: Info su di me
+download-pdf: Scarica PDF
+my-cv: Il mio cv
 my-projects: I miei progetti
 
 projects:

@@ -70,20 +70,20 @@ const projects = [
 </script>
 
 <template>
-  <div class="flex flex-col divide-y">
-    <div v-for="project in projects" :key="project.name" class="flex flex-col gap-y-2 py-4">
-      <h2 class="flex justify-between">
-        <a class="text-xl underline" :href="project.url">{{ project.name }}</a>
-        <a rel="noopener" target="_blank" :href="project.repo">
-          <feather-github class="w-6 h-6" />
-        </a>
-      </h2>
-      <p>{{ t(project.desc) }}</p>
+  <blockquote v-for="project in projects" :key="project.name">
+    <h2>
+      <a :href="project.url">{{ project.name }}</a>
+    </h2>
+    <p>{{ t(project.desc) }}</p>
+    <div style="display: flex; justify-content: space-between;">
       <div>
-        <i v-for="tech in project.tech" :key="tech" class="text-gray-500 dark:text-gray-400">
+        <i v-for="tech in project.tech" :key="tech">
           #{{ tech }}
         </i>
       </div>
+      <a rel="noopener" target="_blank" :href="project.repo">
+        <carbon-logo-github class="w-6 h-6" />
+      </a>
     </div>
-  </div>
+  </blockquote>
 </template>

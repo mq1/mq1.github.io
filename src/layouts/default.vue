@@ -1,11 +1,15 @@
+<script setup lang="ts">
+import { author } from '~/../package.json'
+</script>
+
 <template>
-  <div class="flex flex-col justify-between gap-y-8 min-h-screen max-w-7xl mx-auto p-4 sm:p-8">
-    <Header />
+  <Header />
 
-    <main class="flex flex-col gap-y-4">
-      <router-view />
-    </main>
+  <main>
+    <router-view />
+  </main>
 
-    <Footer />
-  </div>
+  <footer>
+    © {{ new Date().getFullYear() }} {{ author }}
+  </footer>
 </template>
