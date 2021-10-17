@@ -7,7 +7,7 @@ export const handler: Handler = async(event, context) => {
   const currentVersion = event.queryStringParameters!.current_version
 
   const res = await fetch('https://api.github.com/repos/mq1/runmc/releases/latest')
-  const json = await res.json()
+  const json: any = await res.json()
   const latestVersion = json.name
   const pubDate = json.published_at
 
