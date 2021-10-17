@@ -7,6 +7,7 @@ specifiers:
   '@iconify-json/feather': ^1.0.1
   '@intlify/vite-plugin-vue-i18n': ^2.4.0
   '@netlify/functions': ^0.7.2
+  '@types/node': ^16.11.1
   '@types/node-fetch': ^3.0.3
   '@typescript-eslint/eslint-plugin': ^5.0.0
   '@vitejs/plugin-vue': ^1.9.3
@@ -50,6 +51,7 @@ devDependencies:
   '@iconify-json/feather': 1.0.1
   '@intlify/vite-plugin-vue-i18n': 2.4.0_vite@2.6.7+vue-i18n@9.1.9
   '@netlify/functions': 0.7.2
+  '@types/node': 16.11.1
   '@types/node-fetch': 3.0.3
   '@typescript-eslint/eslint-plugin': 5.0.0_eslint@8.0.1+typescript@4.4.4
   '@vitejs/plugin-vue': 1.9.3_vite@2.6.7
@@ -683,6 +685,10 @@ packages:
     deprecated: This is a stub types definition. node-fetch provides its own type definitions, so you do not need this installed.
     dependencies:
       node-fetch: 3.0.0
+    dev: true
+
+  /@types/node/16.11.1:
+    resolution: {integrity: sha512-PYGcJHL9mwl1Ek3PLiYgyEKtwTMmkMw4vbiyz/ps3pfdRYLVv+SN7qHVAImrjdAXxgluDEw6Ph4lyv+m9UpRmA==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
