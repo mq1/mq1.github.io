@@ -9,7 +9,7 @@ watch(locale, getAboutMe)
 </script>
 
 <template>
-  <a :href="`https://mq1.github.io/mq1/${locale.value}.pdf`">
+  <a :href="`https://mq1.github.io/mq1/${locale}.pdf`">
     <button>{{ t('download-pdf') }}</button>
   </a>
   <hr />
