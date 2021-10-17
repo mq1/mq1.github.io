@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t, locale, availableLocales } = useI18n()
+const { t } = useI18n()
 </script>
 
 <template>
@@ -17,10 +17,5 @@ const { t, locale, availableLocales } = useI18n()
         {{ t('my-projects') }}
       </router-link>
     </nav>
-    <select v-model="locale">
-      <option v-for="l in availableLocales" :key="l">
-        {{ l }}
-      </option>
-    </select>
   </header>
 </template>
