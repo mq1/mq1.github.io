@@ -82,7 +82,7 @@ const projects = [
         </i>
       </div>
       <a rel="noopener" target="_blank" :href="project.repo">
-        <carbon-logo-github class="w-6 h-6" />
+        <carbon-logo-github />
       </a>
     </div>
   </blockquote>
