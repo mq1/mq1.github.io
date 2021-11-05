@@ -26,7 +26,7 @@ const projects = [
   },
   {
     name: 'top-for-spotify',
-    url: '/top-for-spotify/',
+    url: 'https://top-for-spotify.mq1.eu/',
     repo: 'https://github.com/mq1/top-for-spotify',
     desc: 'projects.spotify',
     tech: [

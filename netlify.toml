@@ -7,12 +7,6 @@
   command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm build"
 
 [[redirects]]
-  from = "/top-for-spotify/*"
-  to = "https://top-for-spotify.netlify.app/:splat"
-  status = 200
-  force = true
-
-[[redirects]]
   from = "/ali"
   to = "https://raw.githubusercontent.com/mq1/ali/master/ali"
   status = 200
