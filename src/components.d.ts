@@ -5,17 +5,8 @@
 declare module 'vue' {
   export interface GlobalComponents {
     CarbonEmail: typeof import('~icons/carbon/email')['default']
-    CarbonGithub: typeof import('~icons/carbon/github')['default']
     CarbonLogoGithub: typeof import('~icons/carbon/logo-github')['default']
     CarbonLogoLinkedin: typeof import('~icons/carbon/logo-linkedin')['default']
-    CarbonMail: typeof import('~icons/carbon/mail')['default']
-    FeatherGithub: typeof import('~icons/feather/github')['default']
-    FeatherLinkedin: typeof import('~icons/feather/linkedin')['default']
-    FeatherMail: typeof import('~icons/feather/mail')['default']
-    FeatherMoon: typeof import('~icons/feather/moon')['default']
-    FeatherSend: typeof import('~icons/feather/send')['default']
-    FeatherSun: typeof import('~icons/feather/sun')['default']
-    Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
   }
 }
