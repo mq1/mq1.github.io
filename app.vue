@@ -12,3 +12,9 @@ useDark()
 
   <NuxtPage />
 </template>
+
+<style>
+html.dark {
+  background-color: black;
+}
+</style>

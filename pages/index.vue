@@ -1,5 +1,5 @@
 <template>
-  <div h-screen flex flex-col items-center justify-between p-4 dark:bg-black>
+  <div h-screen flex flex-col items-center justify-between p-4>
     <div></div>
     <div>
       <div flex flex-col gap-y-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white p-8 m-4 rounded-3xl shadow-xl>
