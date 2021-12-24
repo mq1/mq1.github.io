@@ -1,3 +1,7 @@
+<script setup lang="ts">
+useDark()
+</script>
+
 <template>
   <Html lang="en">
     <Head>
@@ -8,7 +12,3 @@
 
   <NuxtPage />
 </template>
-
-<script setup lang="ts">
-useDark()
-</script>
