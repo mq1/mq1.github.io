@@ -10,11 +10,7 @@ useDark()
     </Head>
   </Html>
 
-  <NuxtPage />
+  <div h-screen flex flex-col items-center justify-between p-4 dark:bg-black dark:text-white>
+    <NuxtPage />
+  </div>
 </template>
-
-<style>
-html.dark {
-  background-color: black;
-}
-</style>
