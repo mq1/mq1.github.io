@@ -9,8 +9,8 @@
       </div>
     </div>
     <div flex flex-col sm:flex-row justify-between gap-8>
-      <button bg-gradient-to-r from-red-500 to-yellow-500 text-white p-8 rounded-3xl shadow-xl underline href="https://mq1.github.io/mq1/en.pdf">Download my CV in English</button>
-      <button bg-gradient-to-r from-green-500 to-blue-500 text-white p-8 rounded-3xl shadow-xl underline href="https://mq1.github.io/mq1/it.pdf">Scarica il mio CV in Italiano</button>
+      <a bg-gradient-to-r from-red-500 to-yellow-500 text-white p-8 rounded-3xl shadow-xl underline href="https://mq1.github.io/mq1/en.pdf">Download my CV in English</a>
+      <a bg-gradient-to-r from-green-500 to-blue-500 text-white p-8 rounded-3xl shadow-xl underline href="https://mq1.github.io/mq1/it.pdf">Scarica il mio CV in Italiano</a>
     </div>
   </div>
 </template>
