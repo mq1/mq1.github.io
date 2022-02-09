@@ -9,6 +9,6 @@
   "devDependencies": {
     "astro": "^0.22.20",
     "astro-icon": "^0.5.3",
-    "tailwindcss": "^3.0.18"
+    "tailwindcss": "^3.0.19"
   }
 }

@@ -3,12 +3,12 @@ lockfileVersion: 5.3
 specifiers:
   astro: ^0.22.20
   astro-icon: ^0.5.3
-  tailwindcss: ^3.0.18
+  tailwindcss: ^3.0.19
 
 devDependencies:
   astro: 0.22.20
   astro-icon: 0.5.3
-  tailwindcss: 3.0.18
+  tailwindcss: 3.0.19
 
 packages:
 
@@ -3581,8 +3581,8 @@ packages:
       stable: 0.1.8
     dev: true
 
-  /tailwindcss/3.0.18:
-    resolution: {integrity: sha512-ihPTpEyA5ANgZbwKlgrbfnzOp9R5vDHFWmqxB1PT8NwOGCOFVVMl+Ps1cQQ369acaqqf1BEF77roCwK0lvNmTw==}
+  /tailwindcss/3.0.19:
+    resolution: {integrity: sha512-rjsdfz/qZya5xQ0OVynEMETgWq1CacmftgMYeXXh6bRM5vxsNwRSbMJsCCIjq/w67om9VP/AFMolOwiE+5VKig==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
