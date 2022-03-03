@@ -2,10 +2,7 @@
 import { Icon } from 'astro-icon';
 
 export const locales = [ "en", "it" ];
-
-export function getStaticPaths() {
-  return locales.map(locale => ({ params: { lang: locale } }));
-};
+export const getStaticPaths = () => locales.map(locale => ({ params: { lang: locale } }));
 
 const { lang } = Astro.request.params;
 const t = await import(`../../../locales/${lang}`);
