@@ -10,7 +10,7 @@
   from = "/"
   to = "/it/"
   status = 302
-  conditions = { Language = "it" }
+  conditions = { Language = ["it"] }
 
 [[redirects]]
   from = "/"
