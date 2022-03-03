@@ -11,11 +11,11 @@ const { lang } = Astro.request.params;
 const t = await import(`../../../locales/${lang}`);
 ---
 
-<html lang="en">
+<html lang={lang}>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Manuel Quarneti's personal website">
+  <meta name="description" content={ t["description"] }>
   <title>Manuel Quarneti</title>
 
   <style global>
