@@ -1,48 +1,9 @@
----
-import { Icon } from 'astro-icon';
----
+<script>
+  const lang = navigator.language;
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Manuel Quarneti's personal website">
-  <title>Manuel Quarneti</title>
-
-  <style global>
-    @import "../styles/global.css";
-  </style>
-</head>
-<body>
-  <div class="h-screen flex flex-col items-center justify-between p-4 dark:bg-black dark:text-white">
-    <div></div>
-    <main class="flex flex-col gap-y-8">
-      <div class="flex flex-col gap-y-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white p-8 rounded-3xl shadow-xl">
-        <h1 class="text-5xl font-bold">Hi, I'm Manuel Quarneti</h1>
-        <div class="flex gap-x-2">
-          <a href="https://github.com/mq1">
-            <Icon class="hover:scale-90 transition transform-gpu h-8" name="feather:github" />
-          </a>
-          <a href="https://linkedin.com/in/mq1/">
-            <Icon class="hover:scale-90 transition transform-gpu h-8" name="feather:linkedin" />
-          </a>
-          <a href="mailto:manuelquarneti@gmail.com">
-            <Icon class="hover:scale-90 transition transform-gpu h-8" name="feather:mail" />
-          </a>
-        </div>
-      </div>
-      <div class="flex flex-col sm:flex-row justify-between gap-8">
-        <a class="hover:rotate-6 transition transform-gpu bg-gradient-to-r from-red-500 to-yellow-500 text-white p-8 rounded-3xl shadow-xl underline flex gap-x-2 items-center" href="https://mq1.github.io/mq1/en.pdf">
-          Download my CV in English
-          <Icon class="h-4" name="feather:file-text" />
-        </a>
-        <a class="hover:rotate-6 transition transform-gpu bg-gradient-to-r from-green-500 to-blue-500 text-white p-8 rounded-3xl shadow-xl underline flex gap-x-2 items-center" href="https://mq1.github.io/mq1/it.pdf">
-          Scarica il mio CV in Italiano
-          <Icon class="h-4" name="feather:file-text" />
-        </a>
-      </div>
-    </main>
-    <div>© 2021 Manuel Quarneti</div>
-  </div>
-</body>
-</html>
+  if (/^it\b/.test(navigator.language)) {
+    window.location = "/it";
+  } else {
+    window.location = "/en";
+  }
+</script>
