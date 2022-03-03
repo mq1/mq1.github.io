@@ -40,9 +40,9 @@ const t = await import(`../../../locales/${lang}`);
               <Icon class="hover:scale-90 transition transform-gpu h-8" name="feather:mail" />
             </a>
           </div>
-          <div class="flex gap-x-2 underline uppercase font-bold text-lg items-center">
+          <div class="flex gap-x-2 uppercase text-lg items-center">
             {locales.map(locale => (
-              <a href={`/${locale}`}>{ locale }</a>
+              <a class={locale === lang ? "font-bold underline decoration-wavy underline-offset-4" : "font-light"} href={`/${locale}`}>{ locale }</a>
             ))}
           </div>
         </div>
