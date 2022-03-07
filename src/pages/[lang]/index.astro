@@ -19,37 +19,35 @@ const t = await import(`../../../locales/${lang}`);
     @import "../../styles/global.css";
   </style>
 </head>
-<body>
-  <div class="h-screen flex flex-col items-center justify-between p-4 dark:bg-black dark:text-white">
-    <div></div>
-    <main class="flex flex-col gap-y-8">
-      <div class="flex flex-col gap-y-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white p-8 rounded-3xl shadow-xl">
-        <h1 class="text-5xl font-bold">{ t["hi"] }</h1>
-        <div class="flex justify-between">
-          <div class="flex gap-x-2">
-            <a href="https://github.com/mq1">
-              <Icon class="hover:scale-90 transition transform-gpu h-8" name="feather:github" />
-            </a>
-            <a href="https://linkedin.com/in/mq1/">
-              <Icon class="hover:scale-90 transition transform-gpu h-8" name="feather:linkedin" />
-            </a>
-            <a href="mailto:manuelquarneti@gmail.com">
-              <Icon class="hover:scale-90 transition transform-gpu h-8" name="feather:mail" />
-            </a>
-          </div>
-          <div class="flex gap-x-2 uppercase text-lg items-center">
-            {locales.map(locale => (
-              <a class={locale === lang ? "font-bold underline decoration-wavy underline-offset-4" : "font-light"} href={`/${locale}`}>{ locale }</a>
-            ))}
-          </div>
+<body class="h-screen flex flex-col items-center justify-between p-4 dark:bg-black dark:text-white">
+  <div></div>
+  <main class="flex flex-col gap-y-8">
+    <div class="flex flex-col gap-y-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white p-8 rounded-3xl shadow-xl">
+      <h1 class="text-5xl font-bold">{ t["hi"] }</h1>
+      <div class="flex justify-between">
+        <div class="flex gap-x-2">
+          <a href="https://github.com/mq1">
+            <Icon class="hover:scale-90 transition transform-gpu h-8" name="feather:github" />
+          </a>
+          <a href="https://linkedin.com/in/mq1/">
+            <Icon class="hover:scale-90 transition transform-gpu h-8" name="feather:linkedin" />
+          </a>
+          <a href="mailto:manuelquarneti@gmail.com">
+            <Icon class="hover:scale-90 transition transform-gpu h-8" name="feather:mail" />
+          </a>
+        </div>
+        <div class="flex gap-x-2 uppercase text-lg items-center">
+          {locales.map(locale => (
+            <a class={locale === lang ? "font-bold underline decoration-wavy underline-offset-4" : "font-light"} href={`/${locale}`}>{ locale }</a>
+          ))}
         </div>
       </div>
-      <a class="hover:scale-90 transition transform-gpu bg-gradient-to-r from-red-500 to-yellow-500 text-white p-8 rounded-3xl shadow-xl flex justify-center gap-x-2 items-center" href={`https://mq1.github.io/mq1/${lang}.pdf`}>
-        <span class="uppercase font-bold text-lg">{ t["download_cv"] }</span>
-        <Icon class="h-4" name="feather:file-text" />
-      </a>
-    </main>
-    <div>© 2021 Manuel Quarneti</div>
-  </div>
+    </div>
+    <a class="hover:scale-90 transition transform-gpu bg-gradient-to-r from-red-500 to-yellow-500 text-white p-8 rounded-3xl shadow-xl flex justify-center gap-x-2 items-center" href={`https://mq1.github.io/mq1/${lang}.pdf`}>
+      <span class="uppercase font-bold text-lg">{ t["download_cv"] }</span>
+      <Icon class="h-4" name="feather:file-text" />
+    </a>
+  </main>
+  <div>© 2021 Manuel Quarneti</div>
 </body>
 </html>
