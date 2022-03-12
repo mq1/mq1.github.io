@@ -1,4 +1,3 @@
-import Unocss from "unocss/vite";
 import type { AstroUserConfig } from "astro";
 
 const config: AstroUserConfig = {
@@ -6,7 +5,9 @@ const config: AstroUserConfig = {
     site: "https://mq1.eu/",
   },
   vite: {
-    plugins: [Unocss()],
+    ssr: {
+      external: ["svgo"],
+    },
   },
 };
 
