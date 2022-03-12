@@ -23,7 +23,7 @@ const t = await import(`../../../locales/${lang}.json`);
   <div></div>
   <main class="flex flex-col gap-y-8">
     <div class="flex flex-col gap-y-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white p-8 rounded-3xl shadow-xl">
-      <h1 class="text-5xl font-bold">{ t["hi"] }</h1>
+      <h1 class="text-5xl font-bold" set:html={t["hi"]}></h1>
       <div class="flex justify-between">
         <div class="flex gap-x-2">
           <a href="https://github.com/mq1">
@@ -44,7 +44,7 @@ const t = await import(`../../../locales/${lang}.json`);
       </div>
     </div>
     <a class="hover:scale-90 transition transform-gpu bg-gradient-to-r from-red-500 to-yellow-500 text-white p-8 rounded-3xl shadow-xl flex justify-center gap-x-2 items-center" href={`https://mq1.github.io/mq1/${lang}.pdf`}>
-      <span class="uppercase font-bold text-lg">{ t["download_cv"] }</span>
+      <span class="uppercase font-bold text-lg" set:html={t["download_cv"]}></span>
       <Icon class="h-4" name="feather:file-text" />
     </a>
   </main>
