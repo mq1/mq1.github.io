@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
+    "dev": "astro dev --legacy-build",
+    "start": "astro dev --legacy-build",
+    "build": "astro build --legacy-build",
     "preview": "astro preview"
   },
   "devDependencies": {
