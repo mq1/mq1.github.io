@@ -3,5 +3,6 @@ module.exports = {
     tailwindcss: {},
     "postcss-100vh-fix": {},
     autoprefixer: {},
+    ...(process.env.NODE_ENV === "production" ? { cssnano: {} } : {}),
   },
 };
