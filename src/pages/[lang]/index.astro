@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon';
+import '../../styles/global.css';
 
 export const locales = [ "en", "it" ];
 export const getStaticPaths = () => locales.map(locale => ({ params: { lang: locale } }));
@@ -14,10 +15,6 @@ const t = await import(`../../../locales/${lang}.json`);
   <meta name="viewport" content="width=device-width">
   <meta name="description" content={ t["description"] }>
   <title>Manuel Quarneti</title>
-
-  <style global>
-    @import "../../styles/global.css";
-  </style>
 </head>
 <body class="h-screen flex flex-col items-center justify-between p-4 dark:bg-black dark:text-white">
   <div></div>
