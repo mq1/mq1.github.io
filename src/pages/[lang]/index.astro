@@ -1,6 +1,6 @@
 ---
-import { Icon } from 'astro-icon';
-import '../../styles/global.css';
+import { Icon } from "astro-icon";
+import "../../styles/global.css";
 
 export const locales = [ "en", "it" ];
 export const getStaticPaths = () => locales.map(locale => ({ params: { lang: locale } }));
