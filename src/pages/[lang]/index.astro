@@ -35,7 +35,7 @@ const t = await import(`../../../locales/${lang}.json`);
         </div>
         <div class="flex gap-x-2 uppercase text-lg items-center">
           {locales.map(locale => (
-            <a class={locale === lang ? "font-bold underline decoration-wavy underline-offset-4" : "font-light"} href={`/${locale}`}>{ locale }</a>
+            <a class={locale === lang ? "font-bold underline decoration-wavy underline-offset-4" : "font-normal"} href={`/${locale}`}>{ locale }</a>
           ))}
         </div>
       </div>
