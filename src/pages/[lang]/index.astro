@@ -1,5 +1,5 @@
 ---
-import "@picocss/pico/css/pico.css";
+import "@picocss/pico";
 
 export const locales = [ "en", "it" ];
 export const getStaticPaths = () => locales.map(locale => ({ params: { lang: locale } }));
