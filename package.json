@@ -11,6 +11,7 @@
     "@picocss/pico": "^1.5.0",
     "astro": "^0.25.2",
     "astro-icon": "^0.6.1",
+    "cssnano": "^5.1.5",
     "postcss": "^8.4.12"
   }
 }
