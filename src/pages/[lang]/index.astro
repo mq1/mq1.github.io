@@ -1,16 +1,12 @@
 ---
 import "@picocss/pico";
+import translations from "../../translations/index.ts";
+import { locales } from "../../translations/index.ts"
 
-export const locales = [ "en", "it" ];
 export const getStaticPaths = () => locales.map(locale => ({ params: { lang: locale } }));
 
 const { lang } = Astro.request.params;
-const t = await import(`../../../locales/${lang}.json`);
-
-const getLocaleName = async(locale: string) => {
-  const l = await import(`../../../locales/${locale}.json`);
-  return l["name"];
-}
+const t = translations[lang];
 
 const title = "Manuel Quarneti";
 ---
@@ -20,24 +16,24 @@ const title = "Manuel Quarneti";
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content={t["description"]}>
+    <meta name="description" content={t.description}>
     <title>{title}</title>
   </head>
   <body>
     <nav class="container-fluid">
       <ul>
-        {locales.map(locale => locale === lang ? <li><mark set:html={getLocaleName(locale)}></mark></li> : <li><a href={`/${locale}`} set:html={getLocaleName(locale)}></a></li>)}
+        {locales.map(locale => locale === lang ? <li><mark set:html={translations[locale].name}></mark></li> : <li><a href={`/${locale}`} set:html={translations[locale].name}></a></li>)}
       </ul>
     </nav>
     <main class="container">
       <article>
-        <h1 set:html={t["hi"]}></h1>
+        <h1 set:html={t.hi}></h1>
         <a href="https://github.com/mq1">🐙 GitHub</a><br>
         <a href="https://linkedin.com/in/mq1">💼 LinkedIn</a><br>
         <a href="mailto:manuelquarneti@gmail.com">📧 Email</a>
       </article>
       <article>
-      <h2 set:html={t["projects"]}></h2>
+      <h2 set:html={t.projects}></h2>
       <ul>
         <li><a href="https://github.com/mq1/top-for-spotify">🎧 Top for Spotify</a></li>
         <li><a href="https://github.com/mq1/runmc">🚧 runmc (WIP)</a></li>
@@ -45,7 +41,7 @@ const title = "Manuel Quarneti";
       </article>
     </main>
     <footer class="container">
-      <small>MIT Licensed • © 2021-2022 Manuel Quarneti • <a href="https://github.com/mq1/mq1.eu">Source code</a></small>
+      <small>MIT Licensed • © 2021-2022 Manuel Quarneti • <a href="https://github.com/mq1/mq1.eu" set:html={t.source_code}></a></small>
     </footer>
   </body>
 </html>
