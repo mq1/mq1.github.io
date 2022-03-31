@@ -1,6 +1,5 @@
 ---
-import translations from "../../translations/index.ts";
-import { locales } from "../../translations/index.ts"
+import translations, { locales } from "../../translations";
 
 export const getStaticPaths = () => locales.map(locale => ({ params: { lang: locale } }));
 
