@@ -17,10 +17,10 @@ const title = "Manuel Quarneti";
     <meta name="description" content={t.description}>
     <title>{title}</title>
   </head>
-  <body class="flex flex-col justify-between h-screen items-center text-xl">
+  <body class="flex flex-col justify-between h-screen items-center text-xl bg-gray-100 dark:bg-black dark:text-white">
     <nav class="flex justify-left w-full">
       <ul class="p-8 flex gap-4">
-        {locales.map(locale => locale === lang ? <li><span class="bg-blue-200 p-2" set:html={translations[locale].name}></span></li> : <li><a class="p-2" href={`/${locale}`} set:html={translations[locale].name}></a></li>)}
+        {locales.map(locale => locale === lang ? <li><span class="bg-blue-200 dark:text-black p-2" set:html={translations[locale].name}></span></li> : <li><a class="p-2" href={`/${locale}`} set:html={translations[locale].name}></a></li>)}
       </ul>
     </nav>
     <main class="flex flex-col gap-8 lg:w-[50vw]">
@@ -56,5 +56,9 @@ h2 {
 }
 a {
   @apply underline underline-offset-4 decoration-2 decoration-wavy decoration-blue-300;
+}
+
+article {
+  @apply bg-white dark:bg-gray-900;
 }
 </style>
