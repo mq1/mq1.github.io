@@ -1,5 +1,4 @@
 ---
-import "@picocss/pico";
 import translations from "../../translations/index.ts";
 import { locales } from "../../translations/index.ts"
 
@@ -19,29 +18,44 @@ const title = "Manuel Quarneti";
     <meta name="description" content={t.description}>
     <title>{title}</title>
   </head>
-  <body>
-    <nav class="container-fluid">
-      <ul>
-        {locales.map(locale => locale === lang ? <li><mark set:html={translations[locale].name}></mark></li> : <li><a href={`/${locale}`} set:html={translations[locale].name}></a></li>)}
+  <body class="flex flex-col justify-between h-[95vh] items-center text-xl">
+    <nav class="flex justify-left w-full">
+      <ul class="p-8 flex gap-4">
+        {locales.map(locale => locale === lang ? <li><span class="bg-blue-200 p-2" set:html={translations[locale].name}></span></li> : <li><a class="p-2" href={`/${locale}`} set:html={translations[locale].name}></a></li>)}
       </ul>
     </nav>
-    <main class="container">
-      <article>
+    <main class="flex flex-col gap-8 lg:w-[50vw]">
+      <article class="border-2 border-dashed border-gray-300 p-12">
         <h1 set:html={t.hi}></h1>
-        <a href="https://github.com/mq1">🐙 GitHub</a><br>
-        <a href="https://linkedin.com/in/mq1">💼 LinkedIn</a><br>
-        <a href="mailto:manuelquarneti@gmail.com">📧 Email</a>
+        <br>
+        <a href="https://github.com/mq1">🐙 GitHub</a> /
+        <a href="https://linkedin.com/in/mq1">💼 LinkedIn</a> /
+        <a href="mailto:manuelquarneti@gmail.com">📧 Email</a> /
+        <a href="mailto:manuelquarneti@gmail.com" set:html={t.download_cv}></a>
       </article>
-      <article>
-      <h2 set:html={t.projects}></h2>
-      <ul>
-        <li><a href="https://github.com/mq1/top-for-spotify">🎧 Top for Spotify</a></li>
-        <li><a href="https://github.com/mq1/runmc">🚧 runmc (WIP)</a></li>
-      </ul>
+      <article class="border-2 border-dashed border-gray-300 p-12">
+        <h2 set:html={t.projects}></h2>
+        <br>
+        <ul>
+          <li><a href="https://github.com/mq1/top-for-spotify">🎧 Top for Spotify</a></li>
+          <li><a href="https://github.com/mq1/runmc">🚧 runmc (WIP)</a></li>
+        </ul>
       </article>
     </main>
-    <footer class="container">
+    <footer class="flex justify-start w-full px-8">
       <small>MIT Licensed • © 2021-2022 Manuel Quarneti • <a href="https://github.com/mq1/mq1.eu" set:html={t.source_code}></a></small>
     </footer>
   </body>
 </html>
+
+<style>
+h1 {
+  @apply text-5xl font-semibold;
+}
+h2 {
+  @apply text-3xl font-semibold;
+}
+a {
+  @apply underline underline-offset-4 decoration-2 decoration-wavy decoration-blue-300;
+}
+</style>
