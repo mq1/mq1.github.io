@@ -6,6 +6,7 @@ specifiers:
   astro: ^0.25.2
   autoprefixer: ^10.4.4
   postcss: ^8.4.12
+  postcss-100vh-fix: ^1.0.2
   tailwindcss: ^3.0.23
 
 devDependencies:
@@ -14,6 +15,7 @@ devDependencies:
   astro: 0.25.2
   autoprefixer: 10.4.4_postcss@8.4.12
   postcss: 8.4.12
+  postcss-100vh-fix: 1.0.2_postcss@8.4.12
   tailwindcss: 3.0.23_autoprefixer@10.4.4
 
 packages:
@@ -2726,6 +2728,15 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
+    dev: true
+
+  /postcss-100vh-fix/1.0.2_postcss@8.4.12:
+    resolution: {integrity: sha512-t7vqk9AfjI4fXmWlQCEiMZFFhi1hro4WlECINI1TV6Qh1XapUJE++gCmNr95F5Hen/+bz1OmO+SiSB9TZmFmSg==}
+    engines: {node: '>=10.0'}
+    peerDependencies:
+      postcss: ^8.1.0
+    dependencies:
+      postcss: 8.4.12
     dev: true
 
   /postcss-js/4.0.0_postcss@8.4.12:

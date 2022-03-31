@@ -17,7 +17,7 @@ const title = "Manuel Quarneti";
     <meta name="description" content={t.description}>
     <title>{title}</title>
   </head>
-  <body class="flex flex-col justify-between h-[95vh] items-center text-xl">
+  <body class="flex flex-col justify-between h-screen items-center text-xl">
     <nav class="flex justify-left w-full">
       <ul class="p-8 flex gap-4">
         {locales.map(locale => locale === lang ? <li><span class="bg-blue-200 p-2" set:html={translations[locale].name}></span></li> : <li><a class="p-2" href={`/${locale}`} set:html={translations[locale].name}></a></li>)}
