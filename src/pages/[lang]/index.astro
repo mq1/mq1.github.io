@@ -1,10 +1,11 @@
 ---
 import translations, { locales } from "../../translations";
+import Translation from "../../translations/en";
 
 export const getStaticPaths = () => locales.map(locale => ({ params: { lang: locale } }));
 
 const { lang } = Astro.request.params;
-const t = translations[lang];
+const t = translations[lang] as typeof Translation;
 
 const title = "Manuel Quarneti";
 ---
