@@ -2,7 +2,6 @@ lockfileVersion: 5.3
 
 specifiers:
   '@astrojs/tailwind': ^0.0.2
-  '@astrojs/turbolinks': ^0.0.2
   astro: ^0.25.2
   autoprefixer: ^10.4.4
   postcss: ^8.4.12
@@ -11,7 +10,6 @@ specifiers:
 
 devDependencies:
   '@astrojs/tailwind': 0.0.2
-  '@astrojs/turbolinks': 0.0.2
   astro: 0.25.2
   autoprefixer: 10.4.4_postcss@8.4.12
   postcss: 8.4.12
@@ -103,12 +101,6 @@ packages:
       tailwindcss: 3.0.23_autoprefixer@10.4.4
     transitivePeerDependencies:
       - ts-node
-    dev: true
-
-  /@astrojs/turbolinks/0.0.2:
-    resolution: {integrity: sha512-e2xZPJCJ5PKA80nY9jPkgNMpslgbYEWsOgvJa7sBCKWWhcfPUUVLJ/lF5/ZTCrn9ab1IPbIGYUO69JyQBTsn7w==}
-    dependencies:
-      turbolinks: 5.2.0
     dev: true
 
   /@astrojs/webapi/0.11.0:
@@ -3325,10 +3317,6 @@ packages:
     hasBin: true
     dependencies:
       esbuild: 0.14.25
-    dev: true
-
-  /turbolinks/5.2.0:
-    resolution: {integrity: sha512-pMiez3tyBo6uRHFNNZoYMmrES/IaGgMhQQM+VFF36keryjb5ms0XkVpmKHkfW/4Vy96qiGW3K9bz0tF5sK9bBw==}
     dev: true
 
   /type-fest/0.13.1:
