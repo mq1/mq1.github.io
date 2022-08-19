@@ -16,4 +16,5 @@ jobs:
           args: src/pages/cv-it.md -V geometry:margin=1cm -V 'header-includes:\renewcommand*\familydefault{\sfdefault}' -o dist/cv-it.pdf
       - uses: softprops/action-gh-release@v1
         with:
+          tag_name: main
           files: dist/*
