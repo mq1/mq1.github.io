@@ -1,6 +1,5 @@
 ---
-layout: ../layouts/Markdown.astro
-title: Manuel Quarneti
+layout: ../layouts/Cv.astro
 ---
 
 ## Istruzione

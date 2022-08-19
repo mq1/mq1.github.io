@@ -1,0 +1,46 @@
+---
+import Link from "../components/Link.astro";
+import Layout from "./Layout.astro";
+---
+
+<Layout title="Manuel Quarneti | cv">
+	<div class="flex justify-between">
+		<a href="/">
+			<Link className="m-4 text-xl">
+				&larr; Back
+			</Link>
+		</a>
+		<Link className="m-4 text-xl">
+			<button onclick="download()">
+				Download &darr;
+			</button>
+		</Link>
+	</div>
+	<div class="border-2 rounded-lg p-8 my-8">
+		<article id="cv" class="prose max-w-4xl">
+			<h1>Manuel Quarneti</h1>
+			e-mail: <a href="mailto:work@mq1.eu">work@mq1.eu</a>
+			<slot />
+		</article>
+	</div>
+</Layout>
+
+<script>
+	import { jsPDF } from "jspdf";
+
+	// @ts-ignore
+	window.download = () => {
+		const doc = new jsPDF('p', 'pt', 'a4');
+
+		doc.html(document.getElementById("cv")!, {
+			callback: (doc) => {
+				doc.save("manuel-quarneti-cv.pdf");
+			},
+			html2canvas: {
+				scale: 0.55
+			},
+			x: 30,
+			y: 20
+		});
+	};
+</script>
