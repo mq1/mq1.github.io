@@ -1,14 +1,23 @@
 ---
+import path from "node:path";
+
 import Link from "../components/Link.astro";
 import Layout from "./Layout.astro";
+
+const { frontmatter } = Astro.props;
+
+const fileName = path.basename(frontmatter.file).replace(".md", ".pdf");
 ---
 
 <Layout title="Manuel Quarneti | cv">
-    <Link href="/" rel="prefetch">
-        <div class="m-4 sm:mx-0 sm:my-8 text-xl">
+    <div class="flex justify-between m-4 sm:mx-0 sm:my-8 text-xl">
+        <Link href="/" rel="prefetch">
             &larr; Back
-        </div>
-    </Link>
+        </Link>
+        <Link href={"https://github.com/mq1/mq1.eu/releases/download/main/" + fileName}>
+            Download &darr;
+        </Link>
+    </div>
     <article class="prose dark:prose-invert border-2 rounded-lg p-8 my-8 max-w-4xl">
         <slot />
     </article>
