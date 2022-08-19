@@ -1,0 +1,18 @@
+name: Generate PDFs
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: docker://pandoc/latex/latest
+        with:
+          args: src/pages/cv-en.md -V geometry:margin=1cm -V 'header-includes:\renewcommand*\familydefault{\sfdefault}' -o dist/cv-en.pdf
+      - uses: docker://pandoc/latex/latest
+        with:
+          args: src/pages/cv-it.md -V geometry:margin=1cm -V 'header-includes:\renewcommand*\familydefault{\sfdefault}' -o dist/cv-it.pdf
+      - uses: softprops/action-gh-release@v1
+        with:
+          files: dist/*
