@@ -2,12 +2,14 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/image': ^0.3.4
+  '@astrojs/prefetch': ^0.0.7
   '@astrojs/tailwind': ^1.0.0
   '@tailwindcss/typography': ^0.5.4
   astro: ^1.0.6
 
 devDependencies:
   '@astrojs/image': 0.3.4
+  '@astrojs/prefetch': 0.0.7
   '@astrojs/tailwind': 1.0.0
   '@tailwindcss/typography': 0.5.4
   astro: 1.0.6
@@ -93,6 +95,12 @@ packages:
       micromark-util-types: 1.0.2
       uvu: 0.5.6
       vfile-message: 3.1.2
+    dev: true
+
+  /@astrojs/prefetch/0.0.7:
+    resolution: {integrity: sha512-cdIIKcppywnnTseiSIk1s3g3VlcHY/qM4WoqMRaveEzOXWr6NzJ1/bKpRXpx9y6S7BDET+ziV2A7d4t+9vny+A==}
+    dependencies:
+      throttles: 1.0.1
     dev: true
 
   /@astrojs/prism/1.0.1:
@@ -3247,6 +3255,11 @@ packages:
       fs-constants: 1.0.0
       inherits: 2.0.4
       readable-stream: 3.6.0
+    dev: true
+
+  /throttles/1.0.1:
+    resolution: {integrity: sha512-fab7Xg+zELr9KOv4fkaBoe/b3L0GMGLd0IBSCn16GoE/Qx6/OfCr1eGNyEcDU2pUA79qQfZ8kPQWlRuok4YwTw==}
+    engines: {node: '>=6'}
     dev: true
 
   /tiny-glob/0.2.9:

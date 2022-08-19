@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@astrojs/image": "^0.3.4",
+    "@astrojs/prefetch": "^0.0.7",
     "@astrojs/tailwind": "^1.0.0",
     "@tailwindcss/typography": "^0.5.4",
     "astro": "^1.0.6"
