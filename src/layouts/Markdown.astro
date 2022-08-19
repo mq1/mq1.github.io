@@ -1,0 +1,15 @@
+---
+import Link from "../components/Link.astro";
+import Layout from "./Layout.astro";
+---
+
+<Layout title="Manuel Quarneti">
+    <Link href="/">
+        <div class="my-8 text-xl">
+            &larr; Back
+        </div>
+    </Link>
+    <article class="prose lg:prose-xl border-2 rounded-lg p-8 my-8">
+        <slot />
+    </article>
+</Layout>

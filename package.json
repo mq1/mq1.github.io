@@ -10,6 +10,7 @@
   "devDependencies": {
     "@astrojs/image": "^0.3.4",
     "@astrojs/tailwind": "^1.0.0",
+    "@tailwindcss/typography": "^0.5.4",
     "astro": "^1.0.6"
   }
 }

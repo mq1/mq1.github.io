@@ -1,0 +1,12 @@
+---
+export interface Props {
+	href: string;
+    className?: string;
+}
+
+const { href, className } = Astro.props as Props;
+---
+
+<a class={"hover:text-violet-500 transition transform-gpu ease-in-out " + className} href={href}>
+    <slot />
+</a>
