@@ -1,7 +1,10 @@
 ---
-layout: ../layouts/Markdown.astro
-title: Manuel Quarneti
+layout: ../layouts/Cv.astro
 ---
+
+# Manuel Quarneti
+
+email: [work@mq1.eu](mailto:work@mq1.eu)
 
 ## Istruzione
 
