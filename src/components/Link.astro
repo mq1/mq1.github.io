@@ -1,11 +1,12 @@
 ---
 export interface Props {
+	href: string;
     className?: string;
 }
 
-const { className } = Astro.props as Props;
+const { href, className } = Astro.props as Props;
 ---
 
-<div class={"hover:text-violet-500 transition transform-gpu ease-in-out " + className}>
+<a class={"hover:text-violet-500 transition transform-gpu ease-in-out " + className} href={href}>
     <slot />
-</div>
+</a>

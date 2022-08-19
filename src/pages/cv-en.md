@@ -1,5 +1,6 @@
 ---
-layout: ../layouts/Cv.astro
+layout: ../layouts/Markdown.astro
+title: Manuel Quarneti
 ---
 
 ## Education
