@@ -14,8 +14,8 @@ jobs:
       - run: |
           tlmgr install inter
           mkdir dist
-          pandoc src/pages/cv-en.md -o dist/cv-en.pdf
-          pandoc src/pages/cv-it.md -o dist/cv-it.pdf
+          pandoc src/pages/cv-en.md --pdf-engine xelatex -o dist/cv-en.pdf
+          pandoc src/pages/cv-it.md --pdf-engine xelatex -o dist/cv-it.pdf
 
       - uses: softprops/action-gh-release@v1
         with:
