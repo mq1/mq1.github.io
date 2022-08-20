@@ -14,8 +14,8 @@ jobs:
       - run: |
           tlmgr install inter
           mkdir dist
-          pandoc src/pages/cv-en.md --pdf-engine xelatex -V margin=1cm -V 'header-includes:\usepackage[sfdefault]{inter}\pagenumbering{gobble}' -o dist/manuel-quarneti-cv-en.pdf
-          pandoc src/pages/cv-it.md --pdf-engine xelatex -V margin=1cm -V 'header-includes:\usepackage[sfdefault]{inter}\pagenumbering{gobble}' -o dist/manuel-quarneti-cv-it.pdf
+          pandoc src/pages/cv-en.md --pdf-engine xelatex -V 'geometry:margin=1cm' -V 'header-includes:\usepackage[sfdefault]{inter}\pagenumbering{gobble}' -o dist/manuel-quarneti-cv-en.pdf
+          pandoc src/pages/cv-it.md --pdf-engine xelatex -V 'geometry:margin=1cm' -V 'header-includes:\usepackage[sfdefault]{inter}\pagenumbering{gobble}' -o dist/manuel-quarneti-cv-it.pdf
 
       - uses: softprops/action-gh-release@v1
         with:
