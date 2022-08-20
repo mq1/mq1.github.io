@@ -1,5 +1,11 @@
 ---
 layout: ../layouts/Cv.astro
+
+# latex stuff
+geometry: margin=1cm
+header-includes: |
+	\usepackage[sfdefault]{inter}
+	\pagenumbering{gobble}
 ---
 
 # Manuel Quarneti
@@ -17,7 +23,7 @@ email: [work@mq1.eu](mailto:work@mq1.eu)
 
 	> I provided technical support on issues regarding Windows, printers and Active Directory. I also carried out small network monitoring activities.
 
-  _Windows, Active Directory_<br><br>
+	_Windows, Active Directory_<br><br>
 
 * **Software Developer Internship** @[M.M.B. s.r.l.](https://www.mmbsoftware.it/portalemmb/en/home) | [Faenza RA, Italy](https://www.openstreetmap.org/relation/43004) | 2018 ~1 month
 
@@ -25,7 +31,7 @@ email: [work@mq1.eu](mailto:work@mq1.eu)
 	> I also migrated website content from an old website to a newer one.
 	> During the last weeks, I developed a desktop application for internal use.
 
-  _HTML, CSS, JS, JQuery, WordPress, .NET_<br><br>
+	_HTML, CSS, JS, JQuery, WordPress, .NET_<br><br>
 * **Software Developer Internship** @[Bucchi s.r.l.](http://www.bucchi.it/en/) | [Lugo RA, Italy](https://www.openstreetmap.org/relation/43140) | 2018 ~1 month
 
 	> I assisted a sysadmin in various activities, including data parsing, archiving, and visualization.
@@ -35,7 +41,7 @@ email: [work@mq1.eu](mailto:work@mq1.eu)
 
 	> I fixed clients' PCs: most of my tasks were malware removals, system cleanups, backups, and data restoring.
 
-  _Windows XP to 10, Ubuntu_
+	_Windows XP to 10, Ubuntu_
 
 ## Skills
 
