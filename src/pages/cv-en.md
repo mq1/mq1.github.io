@@ -1,11 +1,5 @@
 ---
 layout: ../layouts/Cv.astro
-
-# latex stuff
-geometry: margin=1cm
-header-includes: |
-	\usepackage[sfdefault]{inter}
-	\pagenumbering{gobble}
 ---
 
 # Manuel Quarneti
