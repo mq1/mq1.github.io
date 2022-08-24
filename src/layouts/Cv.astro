@@ -9,7 +9,7 @@ const { frontmatter } = Astro.props;
 const fileName = path.basename(frontmatter.file).replace(".md", ".pdf");
 ---
 
-<Layout title="Manuel Quarneti | cv">
+<Layout title={frontmatter.title}>
     <div class="flex justify-between m-4 sm:mx-0 sm:my-8 text-xl">
         <Link href="/" rel="prefetch">
             &larr; Back

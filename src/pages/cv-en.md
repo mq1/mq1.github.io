@@ -1,5 +1,6 @@
 ---
 layout: ../layouts/Cv.astro
+title: Manuel Quarneti | CV
 ---
 
 # Manuel Quarneti
