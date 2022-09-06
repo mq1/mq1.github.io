@@ -3,8 +3,6 @@ layout: ../layouts/Cv.astro
 title: Manuel Quarneti | CV
 ---
 
-# Manuel Quarneti
-
 email: [work@mq1.eu](mailto:work@mq1.eu)
 
 ## Istruzione
