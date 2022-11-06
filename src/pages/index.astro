@@ -7,17 +7,20 @@ import me from "../assets/IMG_4766.jpeg";
 ---
 
 <Layout title="Manuel Quarneti">
-	<main class="flex flex-col items-center justify-center gap-y-4 max-w-xl">
+	<main class="flex flex-col items-center justify-center gap-y-4 pt-32 sm:pt-0">
 		<Image
 			src={me}
 			height={256}
 			width={256}
 			format="webp"
-			quality={100}
-			class="rounded-full h-48 w-48 object-cover mt-6"
+			quality={95}
+			class="rounded-full h-48 w-48 object-cover"
+			alt="Manuel Quarneti"
 		/>
-		<h1 class="text-5xl text-center">Hi, I'm <strong>Manuel Quarneti</strong></h1>
-		<ul role="list" class="w-full">
+		<h1 class="text-5xl w-full text-center dark:text-white">
+			Hi, I'm <span class="font-bold">Manuel Quarneti</span>
+		</h1>
+		<ul role="list" class="w-full max-w-xl">
 			<Card
 				href="https://github.com/mq1"
 				title="👨🏻‍💻 GitHub"
@@ -32,18 +35,6 @@ import me from "../assets/IMG_4766.jpeg";
 				href="mailto:hi@mq1.eu"
 				title="✉️ hi@mq1.eu"
 				body="Send me an email!"
-			/>
-			<Card
-				href="/cv-en"
-				rel="prefetch"
-				title="🇬🇧 CV"
-				body="Check out my CV! (English)"
-			/>
-			<Card
-				href="/cv-it"
-				rel="prefetch"
-				title="🇮🇹 CV"
-				body="Check out my CV! (Italian)"
 			/>
 			<Card
 				href="https://github.com/mq1/awesome-green-software"
