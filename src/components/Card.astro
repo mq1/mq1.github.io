@@ -1,17 +1,16 @@
 ---
 export interface Props {
-	title: string;
 	body: string;
 	href: string;
 }
 
-const { href, title, body } = Astro.props;
+const { href, body } = Astro.props;
 ---
 
 <li class="bg-white dark:bg-zinc-800 border dark:border-zinc-700 rounded-lg my-4 hover:border-violet-600 hover:bg-violet-50 dark:hover:bg-violet-900 hover:scale-105 transition transform-gpu ease-in-out">
 	<a href={href}>
-		<h2 class="p-6 pb-1 text-xl dark:text-white">
-			{title}
+		<h2 class="p-6 pb-1 text-xl dark:text-white flex gap-x-2 items-center">
+			<slot />
 			<span>&rarr;</span>
 		</h2>
 		<p class="p-6 pt-1 dark:text-white">
