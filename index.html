@@ -16,15 +16,14 @@
         <h1>Hi, I'm Manuel Quarneti</h1>
 
         <div class="content">
-            <div>✉️ You can reach me at <a href="mailto:hi@mq1.eu">hi@mq1.eu</a></div>
-            <div>💼 Here's my <a href="https://linkedin.com/in/mq1">Linkedin</a></div>
-            <div>💻 and my <a href="https://github.com/mq1">Github</a></div>
+            <div>✉️&nbsp;&nbsp;You can reach me at <a href="mailto:hi@mq1.eu">hi@mq1.eu</a></div>
+            <div>💼&nbsp;&nbsp;Here's my <a href="https://linkedin.com/in/mq1">Linkedin</a></div>
+            <div>💻&nbsp;&nbsp;and my <a href="https://github.com/mq1">Github</a></div>
         </div>
     </main>
 
     <footer>
-        <div>MIT Licensed • © 2023 Manuel Quarneti</div>
-        <a href="https://github.com/mq1/mq1.eu">Source code</a>
+        MIT Licensed • © 2023 Manuel Quarneti • <a href="https://github.com/mq1/mq1.eu">Source code</a>
     </footer>
 </body>
 
@@ -40,7 +39,6 @@
         justify-content: space-between;
         background-color: #f0f0f5;
         font-family: sans-serif;
-        letter-spacing: -0.025em;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -66,8 +64,14 @@
     .content {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         row-gap: 10px;
+    }
+
+    .content div {
+        border: 1px solid #8257e5;
+        border-radius: 10px;
+        padding: 15px;
     }
 
     a {
@@ -80,10 +84,6 @@
     }
 
     footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 10px;
         padding: 10px;
     }
 </style>
