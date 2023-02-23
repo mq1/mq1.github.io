@@ -6,6 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manuel Quarneti</title>
+    <style>
+        body {
+            min-height: 100dvh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #f0f0f5;
+            font-family: sans-serif;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121214;
+                color: #e1e1e6;
+            }
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 10px;
+            padding: 10px;
+        }
+
+        .avatar {
+            width: 200px;
+            border-radius: 50%;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            row-gap: 10px;
+        }
+
+        .content div {
+            border: 1px solid #8257e5;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        a {
+            color: #8257e5;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -28,62 +86,3 @@
 </body>
 
 </html>
-
-<style>
-    body {
-        min-height: 100dvh;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        background-color: #f0f0f5;
-        font-family: sans-serif;
-    }
-
-    @media (prefers-color-scheme: dark) {
-        body {
-            background-color: #121214;
-            color: #e1e1e6;
-        }
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        row-gap: 10px;
-        padding: 10px;
-    }
-
-    .avatar {
-        width: 200px;
-        border-radius: 50%;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        row-gap: 10px;
-    }
-
-    .content div {
-        border: 1px solid #8257e5;
-        border-radius: 10px;
-        padding: 15px;
-    }
-
-    a {
-        color: #8257e5;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
-    footer {
-        padding: 10px;
-    }
-</style>
