@@ -36,6 +36,13 @@
         .avatar {
             width: 200px;
             border-radius: 50%;
+            box-shadow: 60px 15px #fca5a5;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            .avatar {
+                box-shadow: 15px 15px #7f1d1d;
+            }
         }
 
         .content {
@@ -43,6 +50,9 @@
             flex-direction: column;
             align-items: stretch;
             row-gap: 10px;
+            background-color: #ffffff;
+            padding: 10px;
+            box-shadow: 15px 15px #fca5a5;
         }
 
         .content div {
@@ -57,6 +67,11 @@
         }
 
         @media (prefers-color-scheme: dark) {
+            .content {
+                background-color: #1f1f1f;
+                box-shadow: 15px 15px #7f1d1d;
+            }
+
             .content svg {
                 fill: #e1e1e6;
             }
