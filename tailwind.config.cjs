@@ -14,6 +14,10 @@ module.exports = {
                     borderBottomColor: theme('colors.gray.200'),
                     paddingBottom: theme('spacing.2'),
                     marginBottom: theme('spacing.4'),
+                    // mobile screen
+                    '@media (max-width: 640px)': {
+                        fontSize: theme('fontSize.3xl'),
+                    }
                 },
                 'a': {
                     color: theme('colors.blue.500'),
