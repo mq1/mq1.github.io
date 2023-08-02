@@ -1,5 +1,9 @@
+[build.environment]
+  NODE_VERSION = "18"
+
 [build]
-  publish = "."
+  publish = "dist"
+  command = "pnpm build"
 
 [[redirects]]
   from = "/*"

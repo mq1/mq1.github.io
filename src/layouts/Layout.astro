@@ -1,0 +1,17 @@
+---
+const {frontmatter} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content=`${frontmatter.author}'s personal website`>
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="generator" content={Astro.generator}/>
+    <title>{frontmatter.author}</title>
+</head>
+<body class="h-[100dvh] flex flex-col items-center justify-center leading-loose dark:bg-neutral-900 dark:text-neutral-300">
+<slot/>
+</body>
+</html>
