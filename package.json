@@ -1,6 +1,7 @@
 {
   "name": "mq1.eu",
   "type": "module",
+  "packageManager": "pnpm",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
