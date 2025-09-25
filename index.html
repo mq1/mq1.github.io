@@ -5,41 +5,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="color-scheme" content="light dark">
-    <link rel="stylesheet" href="/pico.fluid.classless.purple.min.css">
     <title>Manuel Quarneti</title>
     <style>
-        main {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
+      main {
+        min-height: calc(100vh - 2rem);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        padding: 1rem;
+      }
 
-        article {
-            min-width: 30vw;
-        }
+      article {
+        border: 1px dashed gray;
+        border-radius: 1rem;
+        padding: 0rem 1rem 1rem 1rem;
+      }
 
-        @media (max-width: 768px) {
-            main {
-                flex-direction: column;
-            }
-
-            article {
-                min-width: 90vw;
-            }
-        }
+      h1 {
+        text-align: center;
+      }
     </style>
 </head>
 
 <body>
     <main>
-        <h1>👋 Hi<br>I'm Manuel Quarneti</h1>
+        <h1>👋 Hi, I'm Manuel Quarneti</h1>
 
         <article>
-            <header>
-                <h3>✨ My Projects</h3>
-            </header>
+            <h3>✨ My Projects</h3>
             🎮 <a href="https://github.com/mq1/TinyWiiBackupManager">TinyWiiBackupManager</a>
             <br>
             🫶 <a href="https://github.com/mq1/speed-date">Speed Date al Prom</a>
