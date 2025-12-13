@@ -2,55 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Manuel Quarneti</title>
-    <style>
-      main {
-        min-height: calc(100vh - 3rem);
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        justify-content: center;
-        align-items: center;
-        font-family: sans-serif;
-        padding: 1rem;
-        line-height: 1.8;
-      }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Manuel Quarneti</title>
+  <meta name="color-scheme" content="light dark">
+  <link rel="stylesheet" href="github-markdown.css">
+  <style>
+    .markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+    }
 
-      article {
-        border: 1px dashed gray;
-        border-radius: 1rem;
-        padding: 0rem 1rem 1rem 1rem;
+    @media (max-width: 767px) {
+      .markdown-body {
+        padding: 15px;
       }
+    }
 
-      h1 {
-        text-align: center;
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #0d1117;
       }
-
-      @media (prefers-color-scheme: dark) {
-        body {
-          background-color: #121212;
-          color: lightgrey;
-        }
-
-        a {
-          color: #bb86fc;
-        }
-      }
-    </style>
+    }
+  </style>
 </head>
 
 <body>
-    <main>
-        <h1>👋 Hi, I'm Manuel Quarneti</h1>
+  <article class="markdown-body">
+    <h1>👋 Hi, I'm Manuel Quarneti</h1>
 
-        <article>
-            <h3>✨ My Projects</h3>
-            🎮 <a href="https://github.com/mq1/TinyWiiBackupManager">TinyWiiBackupManager</a>
-        </article>
+    <h3>✨ My Projects</h3>
 
-    </main>
+    <ul>
+      <li><a href="https://github.com/mq1/TinyWiiBackupManager">TinyWiiBackupManager</a>: A tiny game backup and homebrew app manager for the Wii</li>
+    </ul>
+  </article>
 </body>
 
 </html>
