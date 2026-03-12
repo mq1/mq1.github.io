@@ -8,29 +8,42 @@
     <style>
       body {
         font-family: sans-serif;
-        max-width: 650px;
-        margin: 40px auto;
-        padding: 0 10px;
-        line-height: 1.5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        line-height: 1.6;
+        min-height: calc(100vh - 40px);
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
       }
     </style>
   </head>
 
   <body>
-    <h1>👋 Hi, I'm Manuel Quarneti</h1>
+    <main>
+      <h1>👋 Hi, I'm Manuel Quarneti</h1>
 
-    <hr />
+      <hr />
 
-    <h3>✨ My Projects</h3>
+      <h3>✨ My Projects</h3>
 
-    ⭐ <a href="https://github.com/mq1/TinyWiiBackupManager">TinyWiiBackupManager</a>: A tiny game backup and homebrew app manager for the Wii
+      ⭐ <a href="https://github.com/mq1/TinyWiiBackupManager">TinyWiiBackupManager</a>: A tiny game backup and homebrew app manager for the Wii
 
-    <br />
+      <br />
 
-    📤 <a href="https://github.com/mq1/wiiload-rs">wiiload-rs</a>: A minimal wiiload implementation in rust
+      📤 <a href="https://github.com/mq1/wiiload-rs">wiiload-rs</a>: A minimal wiiload implementation in rust
 
-    <br />
+      <br />
 
-    🔍 <a href="https://github.com/mq1/which-fs-rs">which-fs-rs</a>: Give me a path, I'll tell you the filesystem it's on
+      🔍 <a href="https://github.com/mq1/which-fs-rs">which-fs-rs</a>: Give me a path, I'll tell you the filesystem it's on
+    </main>
+    <footer>Copyright (c) 2026 Manuel Quarneti • MIT Licensed</footer>
   </body>
 </html>
